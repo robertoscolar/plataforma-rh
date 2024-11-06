@@ -23,16 +23,16 @@
                     <a href="index.html" class="home_label">HOME</a>
                 </li>
                 <li>
-                    <a href="#">QUEM SOMOS</a>
+                    <a href="">QUEM SOMOS</a>
                 </li>
                 <li>
-                    <a href="#">NOSSAS SOLUÇÕES</a>
+                    <a href="">NOSSAS SOLUÇÕES</a>
                 </li>
                 <li>
-                    <a href="cadastro.html">CADASTRO DE CURRÍCULOS</a>
+                    <a href="">CADASTRO DE CURRÍCULOS</a>
                 </li>
                 <li>
-                    <a href="#">FALE CONOSCO</a>
+                    <a href="">FALE CONOSCO</a>
                 </li>
             </ul>
         </navbar>
@@ -40,11 +40,29 @@
 
     <section class="conteudo_principal">
         <div class="container_conteudo_principal">
-            <h2 class="subtitulo">CONSTRUTECH</h2>
-            <h1 class="titulo">SELECIONANDO OS SEUS CONSTRUTORES</h1>
-            <button class="botao_1">
-                <a href="#">SAIBA MAIS</a>
-            </button>
+            <form action="#" method="POST">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com" required>
+                    <label for="floatingInput">Name</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
+                    <label for="floatingInput">Email address</label>
+                </div>
+                <div class="form-floating">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                        style="height: 100px" required></textarea>
+                    <label for="floatingTextarea2">Comments</label>
+                </div>
+                <div class="mb-3">
+                    <input type="file" class="form-control" aria-label="file example" required>
+                    <div class="invalid-feedback">Example invalid form file feedback</div>
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary">Sign in</button>
+                    <button type="reset" class="btn btn-primary">Reset</button>
+                </div>
+            </form>
         </div>
     </section>
 
