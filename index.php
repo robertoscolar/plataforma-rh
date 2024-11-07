@@ -31,7 +31,6 @@
         </div>
     </section>
 
-
     <footer class="rodape">
         <?php
             include 'components/footer.php';

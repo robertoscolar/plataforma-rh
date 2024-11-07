@@ -165,19 +165,24 @@
     color: #fff;
 }
 
-.botao_2 {
-    padding: 10px 20px 10px 20px;
-    border-radius: 8px 8px 8px 8px;
-    border: 1px solid #ff7b00;
-    opacity: 0px;
-
-    font-weight: 500;
-    color: #ff7b00;
-}
-
-
 .botao_1 a,
 .botao_2 a {
     text-decoration: none;
     color: #fff;
+}
+
+.botao_1:hover {
+    padding: 10px 20px 10px 20px;
+    border-radius: 8px 8px 8px 8px;
+    border: 1px solid #ff7b00;
+    opacity: 0px;
+    background: rgba(0,0,0,0);
+
+    font-weight: 500;
+    color: #ff7b00;  
+    
+    a {
+        color: #ff7b00;
+        text-decoration: none;
+    }
 }

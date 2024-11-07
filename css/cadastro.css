@@ -1,0 +1,22 @@
+.conteudo_principal {
+    padding-top: 150px !important;
+
+    h1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;   
+
+        margin-bottom: 1%;
+    }
+}
+
+.container_cadastro {
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    width: 70%;
+    margin: auto;
+    border-radius: 8px 8px 8px 8px;
+
+    background-color: #999;
+}
