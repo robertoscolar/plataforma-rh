@@ -2,7 +2,7 @@
 <navbar class="menu">
     <ul class="menu_itens">
         <li>
-            <a href="index.html" class="home_label">HOME</a>
+            <a href="index.php" class="home_label">HOME</a>
         </li>
         <li>
             <a href="#">QUEM SOMOS</a>
@@ -11,7 +11,7 @@
             <a href="#">NOSSAS SOLUÇÕES</a>
         </li>
         <li>
-            <a href="cadastro.html">CADASTRO DE CURRÍCULOS</a>
+            <a href="cadastro.php">CADASTRO DE CURRÍCULOS</a>
         </li>
         <li>
             <a href="#">FALE CONOSCO</a>
