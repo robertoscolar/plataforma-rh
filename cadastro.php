@@ -79,7 +79,7 @@
                 </div>
 
                 <button class="botao_1" type="submit">Cadastrar</button>
-                <button class="botao_1">Limpar</button>
+                <button class="botao_1" type="reset">Limpar</button>
 
             </form>
         </div>
