@@ -10,13 +10,31 @@
     }
 }
 
-.container_cadastro {
-    display: flex;
-    align-items: center;
-    justify-content: center;    
+.container_cadastro { 
     width: 70%;
     margin: auto;
     border-radius: 8px 8px 8px 8px;
+    padding: 0.5% 1% 0.5% 1%;
 
-    background-color: #999;
+    background-color: #00000071;
+    color: #fff;
+}
+
+.legenda_principal {
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 1px;
+}
+
+.legenda_secundaria {
+    font-weight: 100;
+    font-size: 16px;
+}
+
+.row {
+    margin-bottom: 15px;
+}
+
+.comentario {
+    margin-bottom: 15px !important;
 }

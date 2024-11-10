@@ -1,18 +1,13 @@
 <?php
-    header("Content-Type: text/html; charset=utf-8");
+header("Content-Type: text/html; charset=utf-8");
 
-    $host = "localhost";
-    $user = "root";
-    $pass = "";
-    $db = "plataforma_rh";
+$host = "localhost";
+$user = "root";
+$pass = "";
+$db = "construtech";
 
-    $link = mysqli_connect($host, $user, $pass, $db);
-    $connectionError = mysqli_connect_errno();
+$conn = mysqli_connect($host, $user, $pass, $db);
 
-    if ($connectionError == true) {
-        echo "Erro na conexão";
-    
-    } else {
-        echo "Conexão OK";
-    }
-?>
+if ($conn->connect_error) {
+    die("Falha na conexão com o banco de dados: " . $conn->connect_error);
+}
