@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Função para validar o telefone
     function validarTelefone(telefone) {
         const telefoneLimpo = telefone.replace(/\D/g, '');
-        return telefoneLimpo.length >= 14;
+        return telefoneLimpo.length >= 10;
     }
 
     // Função para validar campos obrigatórios
