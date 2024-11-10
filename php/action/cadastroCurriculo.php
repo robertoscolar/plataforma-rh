@@ -5,6 +5,29 @@ header("Content-Type: text/html; charset=utf-8");
 include_once("../../libs/PHPMailer_5.2.0/class.phpmailer.php");
 include_once("../connection.php");
 
+echo '<p style="display: none;">pop-up</p>';
+echo "<script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>";
+
+//Validação do tipo de arquivo
+$fileType = $_FILES['curriculo']['type'];
+
+if ($fileType != 'application/pdf') {
+    echo "
+        <script>
+            Swal.fire({
+                title: 'ERRO!',
+                text: 'O formato do currículo não é suportado! Por favor, faça o envio em PDF!',
+                icon: 'error',
+                confirmButtonText: 'OK'
+            }).then(function() {
+                window.location.href = '../../cadastro.php';
+            });
+        </script>"; 
+
+    return;
+}
+
+
 $nome = isset($_POST['nome']) ? $_POST['nome'] : '';
 $sobrenome = isset($_POST['sobrenome']) ? $_POST['sobrenome'] : '';
 $email = isset($_POST['email']) ? $_POST['email'] : '';
@@ -38,9 +61,6 @@ $stmt->bind_param(
     $formattedDatetime,
     $fileData
 );
-
-echo '<p style="display: none;">pop-up</p>';
-echo "<script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>";
 
 if ($stmt->execute()) {
     $stmt->close();
