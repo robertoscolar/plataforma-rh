@@ -5,7 +5,6 @@ header("Content-Type: text/html; charset=utf-8");
 include_once("../../libs/PHPMailer_5.2.0/class.phpmailer.php");
 include_once("../connection.php");
 
-
 $nome = isset($_POST['nome']) ? $_POST['nome'] : '';
 $sobrenome = isset($_POST['sobrenome']) ? $_POST['sobrenome'] : '';
 $email = isset($_POST['email']) ? $_POST['email'] : '';
@@ -16,7 +15,7 @@ $fileTmpPath = $_FILES['curriculo']['tmp_name'];
 $fileData = base64_encode(file_get_contents($fileTmpPath));
 
 $datetime = new DateTime(null, new DateTimeZone('America/Sao_Paulo'));
-$formattedDatetime = $datetime->format('Y-m-d H:i:s.');
+$formattedDatetime = $datetime->format('Y-m-d H:i:s');
 
 $stmt = $conn->prepare("
     INSERT INTO cadastro (  nome, 
@@ -39,6 +38,9 @@ $stmt->bind_param(
     $formattedDatetime,
     $fileData
 );
+
+echo '<p style="display: none;">pop-up</p>';
+echo "<script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>";
 
 if ($stmt->execute()) {
     $stmt->close();
@@ -69,6 +71,30 @@ if ($stmt->execute()) {
         echo $e->getMessage();
     }
 */
+
+    echo "
+        <script>
+            Swal.fire({
+                title: 'Sucesso!',
+                text: 'Cadastro realizado com sucesso!',
+                icon: 'success',
+                confirmButtonText: 'OK'
+            }).then(function() {
+                window.location.href = '../../index.php';
+            });
+        </script>";
+
 } else {
-    echo "Erro ao salvar o arquivo no banco de dados: " . $stmt->error;
+
+    echo "
+        <script>
+            Swal.fire({
+                title: 'ERRO!',
+                text: 'Erro ao realizar cadastro. Tente novamente!',
+                icon: 'error',
+                confirmButtonText: 'OK'
+            }).then(function() {
+                window.location.href = '../../cadastro.php';
+            });
+        </script>"; 
 }
