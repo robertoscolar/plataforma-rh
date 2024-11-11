@@ -64,7 +64,7 @@ $stmt->bind_param(
 
 if ($stmt->execute()) {
     $stmt->close();
-/*
+
     $body = file_get_contents('../../email/template-email.html');
     $body = str_replace('{{name}}', $nome, $body);
 
@@ -81,6 +81,7 @@ if ($stmt->execute()) {
         $mail->SetFrom("senac@conectesites.com.br", "Envio");
         $mail->AddReplyTo("senac@conectesites.com.br", "Envio");
         $mail->AddAddress("$email", "Envio");
+        $mail->addAttachment($fileTmpPath, 'curriculo.pdf');
         $mail->Subject = "Cadastro de Currículo - $nome $sobrenome" ;
         $mail->AltBody = "Não foi possível visualizar a mensagem, por favor, tente novamente!";
         $mail->Body = $body;
