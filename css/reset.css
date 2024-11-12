@@ -46,3 +46,16 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+.form-container {
+    display: flex;           /* Usando flexbox */
+    justify-content: space-between;  /* Espaço entre os formulários */
+    gap: 20px;              /* Define a distância entre os formulários */
+}
+
+.form-custom {
+    width: 45%;             /* Controla a largura de cada formulário */
+    padding: 15px;          /* Espaçamento interno */
+    border: 1px solid #ccc; /* Borda para os formulários */
+    border-radius: 5px;     /* Borda arredondada */
+    box-sizing: border-box; /* Para garantir que padding e borda sejam inclusos na largura */
+}
