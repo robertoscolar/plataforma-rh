@@ -2,7 +2,7 @@
 
 header("Content-Type: text/html; charset=utf-8");
 
-include_once("../../libs/PHPMailer_5.2.0/class.phpmailer.php");
+require_once("../../libs/PHPMailer_5.2.0/class.phpmailer.php");
 include_once("../connection.php");
 
 echo '<p style="display: none;">pop-up</p>';
@@ -68,30 +68,32 @@ if ($stmt->execute()) {
     $body = file_get_contents('../../email/template-email.html');
     $body = str_replace('{{name}}', $nome, $body);
 
-    $mail = new PHPMailer(exceptions: true);
+    $mail = new PHPMailer(true);
+    $mail ->CharSet = "UTF-8"; 
+    $mail->IsSMTP();
 
     try {
-        $mail->Host = "mail.conectesites.com.br";
-        $mail->SMTPDebug = 0;
-        $mail->SMTPAuth = true;
-        $mail->SMTPSecure = "ssl";
-        $mail->Port = 465;
-        $mail->Username = "envio@conectesites.com.br";
-        $mail->Password = "cia2015@@";
-        $mail->SetFrom("senac@conectesites.com.br", "Envio");
-        $mail->AddReplyTo("senac@conectesites.com.br", "Envio");
+        $mail->Host        = "mail.conectesites.com.br";
+        $mail->SMTPDebug   = 0; 
+        $mail->SMTPAuth    = true; 
+        $mail->SMTPSecure  = 'ssl';
+        $mail->Port        = 465;  
+        $mail->Username    = "envio@conectesites.com.br"; 
+        $mail->Password    = "cia2015@@"; 
+        $mail->AddReplyTo('senac@conectesites.com.br', 'Envio');
         $mail->AddAddress("$email", "Envio");
+        $mail->SetFrom('senac@conectesites.com.br', 'Envio');
         $mail->addAttachment($fileTmpPath, 'curriculo.pdf');
         $mail->Subject = "Cadastro de Currículo - $nome $sobrenome" ;
         $mail->AltBody = "Não foi possível visualizar a mensagem, por favor, tente novamente!";
         $mail->Body = $body;
+        $mail->send();
 
     } catch (phpmailerException $e) {
         echo $e->errorMessage();
     } catch (Exception $e) {
         echo $e->getMessage();
     }
-*/
 
     echo "
         <script>
