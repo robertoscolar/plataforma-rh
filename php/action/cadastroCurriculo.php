@@ -8,9 +8,18 @@ include_once("../connection.php");
 echo '<p style="display: none;">pop-up</p>';
 echo "<script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>";
 
-//Validação do tipo de arquivo
+$unwanted_array = [
+    'Á'=>'A', 'À'=>'A', 'Â'=>'A', 'Ã'=>'A', 'Ä'=>'A', 'Å'=>'A', 'á'=>'a', 'à'=>'a', 'â'=>'a', 'ã'=>'a', 'ä'=>'a', 'å'=>'a',
+    'É'=>'E', 'È'=>'E', 'Ê'=>'E', 'Ë'=>'E', 'é'=>'e', 'è'=>'e', 'ê'=>'e', 'ë'=>'e',
+    'Í'=>'I', 'Ì'=>'I', 'Î'=>'I', 'Ï'=>'I', 'í'=>'i', 'ì'=>'i', 'î'=>'i', 'ï'=>'i',
+    'Ó'=>'O', 'Ò'=>'O', 'Ô'=>'O', 'Õ'=>'O', 'Ö'=>'O', 'ó'=>'o', 'ò'=>'o', 'ô'=>'o', 'õ'=>'o', 'ö'=>'o',
+    'Ú'=>'U', 'Ù'=>'U', 'Û'=>'U', 'Ü'=>'U', 'ú'=>'u', 'ù'=>'u', 'û'=>'u', 'ü'=>'u',
+    'Ñ'=>'N', 'ñ'=>'n', 'Ç'=>'C', 'ç'=>'c'
+];
+
 $fileType = $_FILES['curriculo']['type'];
 
+//Validação do tipo de arquivo
 if ($fileType != 'application/pdf') {
     echo "
         <script>
@@ -65,12 +74,19 @@ $stmt->bind_param(
 if ($stmt->execute()) {
     $stmt->close();
 
+    //Substitui variaveis do template
     $body = file_get_contents('../../email/template-email.html');
-    $body = str_replace('{{name}}', $nome, $body);
+    $body = str_replace('{{:nome}}', $nome, $body);
+    $body = str_replace('{{:sobrenome}}', $sobrenome, $body);
+    $body = str_replace('{{:email}}', $email, $body);
+    $body = str_replace('{{:telefone}}', $telefone, $body);
+    $body = str_replace('{{:comentario}}', $comentario, $body);
 
     $mail = new PHPMailer(true);
     $mail ->CharSet = "UTF-8"; 
     $mail->IsSMTP();
+
+    $sanitizedFileName = "Curriculo " . strtr($nome, $unwanted_array) . " " . strtr($sobrenome, $unwanted_array) . ".pdf";
 
     try {
         $mail->Host        = "mail.conectesites.com.br";
@@ -80,13 +96,13 @@ if ($stmt->execute()) {
         $mail->Port        = 465;  
         $mail->Username    = "envio@conectesites.com.br"; 
         $mail->Password    = "cia2015@@"; 
-        $mail->AddReplyTo('senac@conectesites.com.br', 'Envio');
-        $mail->AddAddress("$email", "Envio");
-        $mail->SetFrom('senac@conectesites.com.br', 'Envio');
-        $mail->addAttachment($fileTmpPath, 'curriculo.pdf');
-        $mail->Subject = "Cadastro de Currículo - $nome $sobrenome" ;
+        $mail->AddReplyTo('senac@conectesites.com.br', 'Construtech Recrutamento');
+        $mail->SetFrom('senac@conectesites.com.br', 'Construtech Recrutamento');
+        $mail->AddAddress("$email", "$nome");     
+        $mail->Subject = "=?UTF-8?B?".base64_encode("Cadastro de Currículo - $nome $sobrenome")."?=";
         $mail->AltBody = "Não foi possível visualizar a mensagem, por favor, tente novamente!";
         $mail->Body = $body;
+        $mail->addAttachment($fileTmpPath, "$sanitizedFileName");
         $mail->send();
 
     } catch (phpmailerException $e) {
@@ -99,7 +115,7 @@ if ($stmt->execute()) {
         <script>
             Swal.fire({
                 title: 'Sucesso!',
-                text: 'Cadastro realizado com sucesso!',
+                text: 'Cadastro realizado com sucesso. Cheque sua caixa de e-mail!',
                 icon: 'success',
                 confirmButtonText: 'OK'
             }).then(function() {
