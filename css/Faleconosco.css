@@ -1,12 +1,63 @@
-/*fale conosco*/
+.conteudo_principal {
+    padding-top: 150px !important;
 
-.form-faleconosco2
-{
-	width: 424px;
-    margin-top: -333px;
-    margin-left: 688px;
+    h1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;   
+
+        margin-bottom: 1%;
+    }
 }
-.form-faleconosco
-{
-	width:650px;
+
+.container_principal {
+    display: flex;
 }
+
+.container_cadastro { 
+    width: 100%;
+    margin: auto;
+    margin-left: 1%;
+    margin-right: 1%;
+    border-radius: 8px 8px 8px 8px;
+    padding: 0.5% 1% 0.5% 1%;
+
+    background-color: #00000071;
+    color: #fff;
+}
+
+.container_mapa { 
+    width: 100%;
+    margin: auto;
+    margin-left: 1%;
+    margin-right: 1%;
+    border-radius: 8px 8px 8px 8px;
+    padding: 0.5% 1% 0.5% 1%;
+
+    background-color: #00000071;
+    color: #fff;
+}
+
+.legenda_principal {
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 1px;
+}
+
+.legenda_secundaria {
+    font-weight: 100;
+    font-size: 16px;
+}
+
+.row {
+    margin-bottom: 15px;
+}
+
+.comentario {
+    margin-bottom: 15px !important;
+}
+
+#map {
+    width: 100%;   /* O mapa ocupará 100% da largura disponível */
+    height: 400px; /* A altura do mapa será de 400px */
+}   
