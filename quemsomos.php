@@ -21,6 +21,7 @@
         <?php include 'components/header.php'; ?>
     </header>
     <section class="conteudo_principal">
+        
         <div class="introducao">
             <img class="introducao_imagem"></img>
             <h1>
@@ -30,6 +31,10 @@
                 <p>Atuamos como parceira estratégica de diversas empresas, oferecendo soluções rápidas e eficientes na seleção de profissionais qualificados, garantindo que cada empresa contratante tenha acesso aos melhores talentos do mercado.</p>
                 <p>Nossa missão é proporcionar aos nossos clientes a tranquilidade de contar com um processo de recrutamento ágil e assertivo, sempre focado em entregar equipes altamente capacitadas para a execução de projetos com qualidade, segurança e dentro dos prazos estabelecidos.</p>
             </h1>
+        </div>
+
+        <div class="oque_fazemos">
+            
         </div>
     </section>
 
