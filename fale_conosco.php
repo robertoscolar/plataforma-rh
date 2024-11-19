@@ -63,7 +63,7 @@
                 
                 <div class="mb-3">
                   <label for="curriculo" class="form-label">Anexar evidência (somente .pdf):</label>
-                  <input class="form-control" type="file" id="curriculo" style="width: 49%;" accept="application/pdf"
+                  <input class="form-control" type="file" id="curriculo" style="width: 86%;" accept="application/pdf"
                   name="curriculo">
                 </div>
                 
