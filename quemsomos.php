@@ -26,9 +26,9 @@
             <h1 class="dez_anos_exp">
                 <span class="cor-laranja">10 ANOS</span><br>
                 <span class="cor-preta">DE EXPERIÊNCIA!</span>
-                <p>Com uma década de história, nossa empresa se consolidou como líder em triagem e recrutamento especializado para o setor da construção civil.<br></p>
-                <p>Atuamos como parceira estratégica de diversas empresas, oferecendo soluções rápidas e eficientes na seleção de profissionais qualificados, garantindo que cada empresa contratante tenha acesso aos melhores talentos do mercado.</p>
-                <p>Nossa missão é proporcionar aos nossos clientes a tranquilidade de contar com um processo de recrutamento ágil e assertivo, sempre focado em entregar equipes altamente capacitadas para a execução de projetos com qualidade, segurança e dentro dos prazos estabelecidos.</p>
+                <p class="introducao_p">Com uma década de história, nossa empresa se consolidou como líder em triagem e recrutamento especializado para o setor da construção civil.<br></p>
+                <p class="introducao_p">Atuamos como parceira estratégica de diversas empresas, oferecendo soluções rápidas e eficientes na seleção de profissionais qualificados, garantindo que cada empresa contratante tenha acesso aos melhores talentos do mercado.</p>
+                <p class="introducao_p">Nossa missão é proporcionar aos nossos clientes a tranquilidade de contar com um processo de recrutamento ágil e assertivo, sempre focado em entregar equipes altamente capacitadas para a execução de projetos com qualidade, segurança e dentro dos prazos estabelecidos.</p>
             </h1>
         </div>
         <div class="oque_fazemos">

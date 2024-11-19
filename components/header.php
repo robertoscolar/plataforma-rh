@@ -5,7 +5,7 @@
             <a href="index.php" class="home_label">HOME</a>
         </li>
         <li>
-            <a href="#">QUEM SOMOS</a>
+            <a href="quemsomos.php">QUEM SOMOS</a>
         </li>
         <li>
             <a href="#">NOSSAS SOLUÇÕES</a>

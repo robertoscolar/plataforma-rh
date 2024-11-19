@@ -6,11 +6,13 @@
 .conteudo_principal p {
     font-family: 'Kiwi Maru', serif;
     font-size: 20px;
-    color: #000000;
+    color: #000000;   
+}
+
+.introducao p {
     margin-top: 10px;
     margin-left: 120px;
     text-align: center;
-   
 }
 
 .conteudo_principal h1 span {
@@ -21,6 +23,7 @@
     text-align: center;
     width: auto;
 }
+
 
 .dez_anos_exp {
     margin-top: -1px !important;
