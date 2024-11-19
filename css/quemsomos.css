@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap');
+
+/* INTRODUÇÃO */
+
+.conteudo_principal p {
+    font-family: 'Kiwi Maru', serif;
+    font-size: 20px;
+    color: #000000;
+    margin-top: 10px;
+    margin-left: 120px;
+    text-align: center;
+   
+}
+
+.conteudo_principal h1 span {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    padding: 10px 20px;
+    margin: 0;
+    text-align: center;
+    width: auto;
+}
+
+.dez_anos_exp {
+    margin-top: -1px !important;
+}
+
+.introducao {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1398px;
+    height: auto;
+    text-align: center;
+    display: flex;
+    margin: auto;
+}
+
+.introducao_imagem {
+    width: 549.06px;                      
+    height: 368.61px;                      
+    background: url(../images/quemsomos/construcao.jpg);
+    background-size: cover;           
+    background-position: center;    
+    background-repeat: no-repeat;    
+    border-radius: 40px;
+}
+
+.cor-preta {
+    color: #000000;
+}
+
+.cor-laranja {
+    color: #FF7420;
+}
+
+
+/* CENTRAL */
+
+
+
+
+/* OQUE FAZEMOS */
+
+.oque_fazemos {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1398px;
+    height: auto;
+    text-align: start;
+    display: flex;
+    margin: auto;
+   /*background: red;*/ 
+    height: 445px;
+}
+
+.oque_fazemos_img {
+    width: 549.06px;                      
+    height: 368.61px;                      
+    background: url(../images/quemsomos/ENTREVISTA.png);
+    background-size: cover;           
+    background-position: center;    
+    background-repeat: no-repeat;
+    border-radius: 90px;
+    margin-left: -630px;
+}
+
+.oque_fazemos p {
+    font-family: 'Kiwi Maru', serif;
+    font-size: 20px;
+    color: #000000;
+    margin-top: 10px;
+    margin-left: 120px;
+    text-align: center;
+   
+}
+
+.oque_fazemos h1 span {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    padding: 10px 20px;
+    margin: 0;
+    text-align: center;
+    width: auto;
+}
