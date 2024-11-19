@@ -3,13 +3,11 @@
 
 /* INTRODUÇÃO */
 
-.conteudo_principal p {
-    font-family: 'Kiwi Maru', serif;
-    font-size: 20px;
-    color: #000000;   
-}
 
 .introducao p {
+    font-family: 'Kiwi Maru', serif;
+    font-size: 20px;
+    color: #000000;  
     margin-top: 10px;
     margin-left: 120px;
     text-align: center;
@@ -62,10 +60,7 @@
 /* CENTRAL */
 
 
-
-
-/* OQUE FAZEMOS */
-
+/* O QUE FAZEMOS */
 .oque_fazemos {
     justify-content: center;
     align-items: center;
@@ -75,19 +70,20 @@
     text-align: start;
     display: flex;
     margin: auto;
-   /*background: red;*/ 
+   
     height: 445px;
+    gap: 20px; 
 }
 
 .oque_fazemos_img {
-    width: 549.06px;                      
-    height: 368.61px;                      
+    width: 909.06px;
+    height: 368.61px;
     background: url(../images/quemsomos/ENTREVISTA.png);
-    background-size: cover;           
-    background-position: center;    
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     border-radius: 90px;
-    margin-left: -630px;
+    margin-left: 0;
 }
 
 .oque_fazemos p {
@@ -95,9 +91,9 @@
     font-size: 20px;
     color: #000000;
     margin-top: 10px;
-    margin-left: 120px;
-    text-align: center;
-   
+    margin-left: 0; 
+    text-align: start;
+    max-width: 100%; 
 }
 
 .oque_fazemos h1 span {
@@ -108,3 +104,4 @@
     text-align: center;
     width: auto;
 }
+

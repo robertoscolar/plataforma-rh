@@ -35,7 +35,7 @@
         <h1>
             <span class="cor-laranja">OQUE</span><BR>
             <span class="cor-preta">FAZEMOS ?</span>
-        <p>Realizamos triagem e recrutamento de profissionais especializados para o setor da construção civil, selecionando talentos qualificados para diversas áreas, como alvenaria, elétrica, hidráulica, carpintaria e muito mais.</p>
+        <p class="oque_p">Realizamos triagem e recrutamento de profissionais especializados para o setor da construção civil, selecionando talentos qualificados para diversas áreas, como alvenaria, elétrica, hidráulica, carpintaria e muito mais.</p>
         </h1>
         <div class="oque_fazemos_img"></div>
         </div>
