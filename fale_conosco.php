@@ -29,7 +29,7 @@
     </header>
 
     <section class="conteudo_principal">
-        <h1>CADASTRO DE CURRÍCULO</h1>
+        <h1>CADASTRO DE CONTATO</h1>
         <div class="container_principal">
           <div class="container_cadastro">
             <h2 class="legenda_principal">Preencha os dados abaixo</h2>
@@ -42,7 +42,7 @@
                   maxlength="100">
                 </div>
                 <div class="col">
-                  <input type="text" class="form-control" placeholder="Sobrenome" aria-label="Sobrenome"
+                  <input type="text" class="form-control" placeholder="CPF" aria-label="Sobrenome"
                   maxlength="100" name="sobrenome">
                     </div>
                   </div>
@@ -62,7 +62,7 @@
                 maxlength="1000" name="comentario"></textarea>
                 
                 <div class="mb-3">
-                  <label for="curriculo" class="form-label">Currículo (somente .pdf):</label>
+                  <label for="curriculo" class="form-label">Anexar evidência (somente .pdf):</label>
                   <input class="form-control" type="file" id="curriculo" style="width: 49%;" accept="application/pdf"
                   name="curriculo">
                 </div>
@@ -96,7 +96,7 @@
 
         // Adicionando um marcador para mostrar no mapa (opcional)
         L.marker([-23.563441135784334, -46.65480798993285]).addTo(map)
-            .bindPopup("São Paulo, SP")
+            .bindPopup("<b>ConstruTech São Paulo, SP<b>")
             .openPopup();
     </script>
     

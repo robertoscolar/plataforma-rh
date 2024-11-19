@@ -1,5 +1,6 @@
 .conteudo_principal {
     padding-top: 150px !important;
+    box-shadow: 0px 4px 15px rgba(4, 4, 4, 4.3), 0px 0px 10px rgba(2, 2, 2, 2.3);
 
     h1 {
         display: flex;
@@ -15,26 +16,27 @@
 }
 
 .container_cadastro { 
-    width: 100%;
+    width: 45%;
     margin: auto;
-    margin-left: 1%;
+    margin-left: 17%;
     margin-right: 1%;
     border-radius: 8px 8px 8px 8px;
     padding: 0.5% 1% 0.5% 1%;
 
-    background-color: #00000071;
+    background-color: #3f3e3e63;
     color: #fff;
+    box-shadow: 0px 4px 15px rgba(4, 4, 4, 4.3), 0px 0px 10px rgba(2, 2, 2, 2.3);
 }
 
 .container_mapa { 
-    width: 100%;
+    width: 70%;
     margin: auto;
-    margin-left: 1%;
-    margin-right: 1%;
+    margin-left: 5%;
+    margin-right: 8%;
     border-radius: 8px 8px 8px 8px;
     padding: 0.5% 1% 0.5% 1%;
 
-    background-color: #00000071;
+    background-color: #00000000;
     color: #fff;
 }
 
@@ -58,6 +60,8 @@
 }
 
 #map {
-    width: 100%;   /* O mapa ocupará 100% da largura disponível */
-    height: 400px; /* A altura do mapa será de 400px */
+    width: 80%;   /* O mapa ocupará 100% da largura disponível */
+    height: 390px; /* A altura do mapa será de 400px */
+    border-radius: 64px;
+    box-shadow: 0px 4px 15px rgba(4, 4, 4, 4.3), 0px 0px 10px rgba(2, 2, 2, 2.3);
 }   
