@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/Faleconosco.css">
     <link rel="stylesheet" href="css/reset.css">
-    <script src="js/validaCampos.js"></script>
+    <script src="js/validaContato.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
@@ -35,15 +35,15 @@
             <h2 class="legenda_principal">Preencha os dados abaixo</h2>
             <p class="legenda_secundaria">* Lembre-se de que todos os campos são obrigatórios</p>
             
-            <form action="php/action/cadastroCurriculo.php" method="POST" enctype="multipart/form-data">
+            <form action="php/action/faleConoscoAction.php" method="POST" enctype="multipart/form-data">
               <div class="row">
                 <div class="col">
                   <input type="text" class="form-control" placeholder="Nome" aria-label="Nome" name="nome"
                   maxlength="100">
                 </div>
                 <div class="col">
-                  <input type="text" class="form-control" placeholder="CPF" aria-label="Sobrenome"
-                  maxlength="100" name="sobrenome">
+                  <input type="text" class="form-control" placeholder="CPF" aria-label="cpf"
+                  maxlength="100" name="cpf">
                     </div>
                   </div>
                   
@@ -62,9 +62,9 @@
                 maxlength="1000" name="comentario"></textarea>
                 
                 <div class="mb-3">
-                  <label for="curriculo" class="form-label">Anexar evidência (somente .pdf):</label>
-                  <input class="form-control" type="file" id="curriculo" style="width: 86%;" accept="application/pdf"
-                  name="curriculo">
+                  <label for="evidencia" class="form-label">Anexar evidência (somente .pdf):</label>
+                  <input class="form-control" type="file" id="evidencia" style="width: 86%;" accept="application/pdf"
+                  name="evidencia">
                 </div>
                 
                 <button class="botao_1" type="submit">Cadastrar</button>
