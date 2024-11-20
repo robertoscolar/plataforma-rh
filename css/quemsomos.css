@@ -56,11 +56,8 @@
     color: #FF7420;
 }
 
-
-/* CENTRAL */
-
-
 /* O QUE FAZEMOS */
+
 .oque_fazemos {
     justify-content: center;
     align-items: center;
@@ -104,4 +101,37 @@
     text-align: center;
     width: auto;
 }
+
+.fazemos_label {
+    margin: 150px !important;
+}
+
+/* DEPOIMENTOS */
+
+.depoimentos {
+    justify-content: center;
+    /* align-items: center; */
+    width: 100%;
+    max-width: 1398px;
+    height: auto;
+    text-align: start;
+    display: flex;
+    margin: auto;
+    background-color: red;
+    height: 445px;
+    gap: 20px; 
+}
+
+.depoimentos h1 span {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    padding: 10px 20px;
+    margin: 0;
+    text-align: center;
+    width: auto;
+}
+
+
+
+
 

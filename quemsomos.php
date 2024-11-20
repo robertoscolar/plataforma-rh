@@ -21,8 +21,8 @@
     </header>
     <section class="conteudo_principal">
         
-        <div class="introducao">
-            <div class="introducao_imagem"></div>
+    <div class="introducao">
+    <div class="introducao_imagem"></div>
             <h1 class="dez_anos_exp">
                 <span class="cor-laranja">10 ANOS</span><br>
                 <span class="cor-preta">DE EXPERIÊNCIA!</span>
@@ -31,16 +31,32 @@
                 <p class="introducao_p">Nossa missão é proporcionar aos nossos clientes a tranquilidade de contar com um processo de recrutamento ágil e assertivo, sempre focado em entregar equipes altamente capacitadas para a execução de projetos com qualidade, segurança e dentro dos prazos estabelecidos.</p>
             </h1>
         </div>
-        <div class="oque_fazemos">
+    <div class="oque_fazemos">
         <h1>
             <span class="cor-laranja">OQUE</span><BR>
-            <span class="cor-preta">FAZEMOS ?</span>
+            <span class="cor-preta fazemos_label">FAZEMOS ?</span>
         <p class="oque_p">Realizamos triagem e recrutamento de profissionais especializados para o setor da construção civil, selecionando talentos qualificados para diversas áreas, como alvenaria, elétrica, hidráulica, carpintaria e muito mais.</p>
         </h1>
         <div class="oque_fazemos_img"></div>
+    </div>
+    </div>
+    
+    <div class="depoimentos">
+        <h1>
+            <span class="cor-laranja">DEPOIMENTOS DE</span><BR>
+            <span >EMPRESAS</span>
+        </h1>
+        <div class="depoimentos_conteiner_images">
+            <div class="roberto"></div>
+            <div class="fernanda"></div>
+            <div class="alice"></div>
         </div>
-        </div>
+    </div>
+    
+    
+    
     </section>
+
 
 
     <!--<footer class="rodape">
