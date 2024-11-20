@@ -106,6 +106,52 @@
     margin: 150px !important;
 }
 
+/* DIFERENTES */
+
+.diferentes {
+    width: 1332px;
+    height: 522px;
+    background: red;
+    justify-content: center;
+    /* align-items: center; */
+    width: 100%;
+    max-width: 1398px;
+    height: auto;
+    text-align: start;
+    display: flex;
+    margin: auto;
+    background-color: red;
+    height: 445px;
+    gap: 20px; 
+    text-align: center;
+}
+
+.diferentes h1 span {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    padding: 10px 20px;
+    margin: 0;
+    text-align: center;
+    width: auto;
+}
+
+.texto_padrao {
+    font-family: 'Kiwi Maru', serif;
+    font-size: 20px;
+    color: #000000;
+    margin-top: 10px;
+    margin-left: 0; 
+    text-align: start;
+    max-width: 100%; 
+}
+
+.diferente_text_center {
+
+}
+
+
+
+
 /* DEPOIMENTOS */
 
 .depoimentos {

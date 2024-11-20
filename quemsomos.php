@@ -41,7 +41,21 @@
     </div>
     </div>
     
-    <div class="depoimentos">
+    <div class="diferentes">
+    <h1>
+        <span class="cor-laranja">O QUE</span><BR>
+        <span>NOS TORNA DIFERENTES</span>
+        <p class="texto_padrao">Somos mais do que um elo entre profissionais e projetos. Somos parceiros estratégicos que agregam valor em cada etapa do processo de recrutamento e seleção. Por isso, nos destacamos no mercado da construção civil.</p>
+    </h1>
+    <div class="diferente_text_center">
+        
+    </div>
+
+
+
+    
+    </div>
+    <!-- <div class="depoimentos">
         <h1>
             <span class="cor-laranja">DEPOIMENTOS DE</span><BR>
             <span >EMPRESAS</span>
@@ -51,7 +65,7 @@
             <div class="fernanda"></div>
             <div class="alice"></div>
         </div>
-    </div>
+    </div> -->
     
     
     
