@@ -42,14 +42,24 @@
     </div>
     
     <div class="diferentes">
-    <h1>
-        <span class="cor-laranja">O QUE</span><BR>
-        <span>NOS TORNA DIFERENTES</span>
-        <p class="texto_padrao">Somos mais do que um elo entre profissionais e projetos. Somos parceiros estratégicos que agregam valor em cada etapa do processo de recrutamento e seleção. Por isso, nos destacamos no mercado da construção civil.</p>
-    </h1>
-    <div class="diferente_text_center">
-        
+        <div class="diferentes_conteudo">
+            <h1>
+                <span class="cor-laranja">O QUE</span><br>
+                <span>NOS TORNA DIFERENTES</span>
+            </h1>
+            <p class="texto_padrao diferente_text_center">
+                Somos mais do que um elo entre profissionais e projetos. Somos parceiros estratégicos que agregam valor em cada etapa do processo de recrutamento e seleção. Por isso, nos destacamos no mercado da construção civil.
+            </p>
+            <div class="diferente_text_center">
+                <p>1. Dez anos de compromisso com a excelência na seleção de profissionais e no sucesso dos nossos clientes.</p>
+                <p>2. Processo de seleção rigoroso para garantir os melhores talentos e resultados para nossos clientes.</p>
+                <p>3. Seleção eficiente de profissionais qualificados, prontos para atender seu projeto com rapidez e precisão.</p>
+            </div>
+        </div>
     </div>
+
+    
+    
 
 
 
