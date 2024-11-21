@@ -89,7 +89,10 @@
                     <span class="cor-laranja ">QUER SABER</span><br>
                     <span class="fazemos_label">MAIS?</span>
                 </h1>
-                <button type="button">ENTRE EM CONTATO JÁ!</button>
+
+                    <button class="btn" type="button">ENTRE EM CONTATO JÁ!</button>
+ 
+                
             </div>
         </section>
     </main>

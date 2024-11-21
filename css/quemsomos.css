@@ -225,6 +225,7 @@
     background-image: url(../images/quemsomos/Cliente_03.jpeg);
 }
 
+
 .depoimentos_cliente p {
     font-family:'Open Sans', Helvetica, sans-serif;
     font-style: italic;
@@ -242,6 +243,18 @@
     display: flex;
     margin-top: 90px;
 }
+
+.contato button:hover {
+    background-color: #FF7420; /* Mudança de cor */
+    transform: translateY(-3px); /* Efeito de "elevação" */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.contato button:active {
+    transform: translateY(1px); /* Efeito de "pressionamento" */
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1); /* Sombra mais sutil no clique */
+}
+
 
 .contato button {
     border-radius: 10px;

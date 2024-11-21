@@ -11,7 +11,7 @@
             <a href="#">NOSSAS SOLUÇÕES</a>
         </li>
         <li>
-            <a href="cadastro.php">CADASTRO DE CURRÍCULOS</a>
+            <a href="fale_conosco.php">CADASTRO DE CURRÍCULOS</a>
         </li>
         <li>
             <a href="#">FALE CONOSCO</a>
