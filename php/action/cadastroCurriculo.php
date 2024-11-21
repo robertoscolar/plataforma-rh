@@ -75,7 +75,7 @@ if ($stmt->execute()) {
     $stmt->close();
 
     //Substitui variaveis do template
-    $body = file_get_contents('../../email/template-email.html');
+    $body = file_get_contents('../../email/template-email_cadastro.html');
     $body = str_replace('{{:nome}}', $nome, $body);
     $body = str_replace('{{:sobrenome}}', $sobrenome, $body);
     $body = str_replace('{{:email}}', $email, $body);
