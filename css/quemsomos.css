@@ -1,8 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
 
-/* INTRODUÇÃO */
-
+.conteudo_principal {
+    background-image: url(../images/images/background/body_backgroud.png);
+    width: 100%;
+    z-index: -1;
+    padding-bottom: 60px;
+    margin-top: -90px;
+    padding-top: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative; /* Adicionado para garantir que z-index funcione */
+}
 
 .introducao p {
     font-family: 'Kiwi Maru', serif;
@@ -21,7 +31,6 @@
     text-align: center;
     width: auto;
 }
-
 
 .dez_anos_exp {
     margin-top: -1px !important;
@@ -56,20 +65,15 @@
     color: #FF7420;
 }
 
-/* O QUE FAZEMOS */
-
 .oque_fazemos {
     justify-content: center;
     align-items: center;
     width: 100%;
     max-width: 1398px;
-    height: auto;
+    height: 445px;
     text-align: start;
     display: flex;
     margin: auto;
-   
-    height: 445px;
-    gap: 20px; 
 }
 
 .oque_fazemos_img {
@@ -90,7 +94,9 @@
     margin-top: 10px;
     margin-left: 0; 
     text-align: start;
-    max-width: 100%; 
+    max-width: 80%; 
+    display: flex;
+    margin-top: 40px;
 }
 
 .oque_fazemos h1 span {
@@ -106,27 +112,21 @@
     margin: 150px !important;
 }
 
-/* DIFERENTES */
-
 .diferentes {
-    width: 1332px;
-    height: 522px;
     width: 100%;
     max-width: 1398px;
     height: auto;
     text-align: start;
     margin: 0 auto;
-    /* background-color: hsla(0, 100%, 50%, 0.5);   */
-    height: 445px;
     gap: 20px; 
     text-align: center;
 }
 
-.diferentes h1 span {
+.diferentes h1, span {
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     padding: 10px 20px;
-    margin: 0;
+    margin: 10px;
     text-align: center;
     width: auto;
 }
@@ -153,8 +153,6 @@
     margin: 20px; 
 }
 
-
-
 .diferente_text_center p {
     font-family: 'Kiwi Maru', serif;
     color: #000000;  
@@ -168,26 +166,19 @@
     margin-left: 80px;
 }
 
-
-
-
-/* DEPOIMENTOS */
-
 .depoimentos {
     justify-content: center;
-    /* align-items: center; */
     width: 100%;
     max-width: 1398px;
     height: auto;
-    text-align: start;
+    text-align: center;
     display: flex;
+    flex-direction: column;
     margin: auto;
-    background-color: red;
-    height: 445px;
-    gap: 20px; 
+    gap: 30px;
 }
 
-.depoimentos h1 span {
+.depoimentos h1, span {
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     padding: 10px 20px;
@@ -196,7 +187,77 @@
     width: auto;
 }
 
+.depoimentos_images {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
 
+.depoimentos_cliente {
+    text-align: center;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
 
+.depoimentos_cliente01, .depoimentos_cliente02, .depoimentos_cliente03 {
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 15%;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+}
 
+.depoimentos_cliente01 {
+    background-image: url(../images/quemsomos/Cliente_01.jpeg);
+}
 
+.depoimentos_cliente02 {
+    background-image: url(../images/quemsomos/Cliente_02.jpeg);
+}
+
+.depoimentos_cliente03 {
+    background-image: url(../images/quemsomos/Cliente_03.jpeg);
+}
+
+.depoimentos_cliente p {
+    font-family:'Open Sans', Helvetica, sans-serif;
+    font-style: italic;
+    margin: 5px 0;
+    padding: 0;
+    font-size: 14px;
+    color: #333;
+}
+
+.contato {
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    text-align: start;
+    display: flex;
+    margin-top: 90px;
+}
+
+.contato button {
+    border-radius: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 32px;
+    color: white;
+    margin-left: 10px; 
+    max-width: 80%; 
+    background: black;
+}
+
+.contatos h1, span {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    padding: 10px 20px;
+    margin: 0;
+    text-align: center;
+    width: auto;
+}
