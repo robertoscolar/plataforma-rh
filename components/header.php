@@ -2,19 +2,19 @@
 <navbar class="menu">
     <ul class="menu_itens">
         <li>
-            <a href="index.php" class="home_label">HOME</a>
+            <a href="index.php">HOME</a>
         </li>
         <li>
             <a href="quemsomos.php">QUEM SOMOS</a>
         </li>
         <li>
-            <a href="#">NOSSAS SOLUÇÕES</a>
+            <a href="nossas_solucoes.php">NOSSAS SOLUÇÕES</a>
         </li>
         <li>
-            <a href="fale_conosco.php">CADASTRO DE CURRÍCULOS</a>
+            <a href="cadastro.php">CADASTRO DE CURRÍCULOS</a>
         </li>
         <li>
-            <a href="#">FALE CONOSCO</a>
+            <a href="fale_conosco.php">FALE CONOSCO</a>
         </li>
     </ul>
 </navbar>

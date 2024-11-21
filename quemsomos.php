@@ -18,7 +18,6 @@
     <header class="cabecalho">
         <?php include 'components/header.php'; ?>
     </header>
-
     <main>
         <section class="conteudo_principal">
             <div class="introducao">
@@ -89,10 +88,11 @@
                     <span class="cor-laranja ">QUER SABER</span><br>
                     <span class="fazemos_label">MAIS?</span>
                 </h1>
-
-                    <button class="btn" type="button">ENTRE EM CONTATO JÁ!</button>
+<a href="quemsomos.php">
+<button>ENTRE EM CONTATO JÁ!</button>
+</a>
+                    
  
-                
             </div>
         </section>
     </main>

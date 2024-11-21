@@ -2,17 +2,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
 
-.conteudo_principal {
+
+/* .conteudo_principal {
     background-image: url(../images/images/background/body_backgroud.png);
     width: 100%;
-    z-index: -1;
+    z-index: 10;
     padding-bottom: 60px;
     margin-top: -90px;
     padding-top: 200px;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative; /* Adicionado para garantir que z-index funcione */
-}
+    position: relative; 
+} */
+
+
 
 .introducao p {
     font-family: 'Kiwi Maru', serif;
@@ -264,6 +267,7 @@
     margin-left: 10px; 
     max-width: 80%; 
     background: black;
+    z-index: 10px !important;
 }
 
 .contatos h1, span {
