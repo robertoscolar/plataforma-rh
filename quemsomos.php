@@ -88,7 +88,7 @@
                     <span class="cor-laranja ">QUER SABER</span><br>
                     <span class="fazemos_label">MAIS?</span>
                 </h1>
-<a href="quemsomos.php">
+<a href="fale_conosco.php">
 <button>ENTRE EM CONTATO JÁ!</button>
 </a>
                     

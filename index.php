@@ -26,7 +26,7 @@
             <h2 class="subtitulo">CONSTRUTECH</h2>
             <h1 class="titulo">SELECIONANDO OS SEUS COLABORADORES</h1>
             <button class="botao_1">
-                <a href="#">SAIBA MAIS</a>
+                <a href="quemsomos.php">SAIBA MAIS</a>
             </button>
         </div>
     </section>

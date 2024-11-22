@@ -1,5 +1,9 @@
 /* PAGINA */
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
 @keyframes slideUpFadeIn {
     0% {
         opacity: 0; 
@@ -56,8 +60,10 @@ body {
     font-weight: 100;
 }
 
+
 .home_label {
-    font-weight: 600 !important;
+    font-weight: 450 !important;
+    font-family: 'Poppins', sans-serif;
 }
 
 .conteudo_principal {
@@ -82,9 +88,10 @@ body {
 
 .titulo {
     width: 60%;
-    font-size: 500%;
+    font-size: 400%;
     font-weight: bold;
     margin-bottom: 30px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .rodape {
@@ -175,7 +182,7 @@ body {
 
 /* COMPONENTES */
 .botao_1 {
-    padding: 10px 20px 10px 20px;
+    padding: 30px;
     border-radius: 8px 8px 8px 8px;
     border: 1px solid #ff7b00;
 
@@ -191,7 +198,7 @@ body {
 }
 
 .botao_1:hover {
-    padding: 10px 20px 10px 20px;
+    padding: 30px;
     border-radius: 8px 8px 8px 8px;
     border: 1px solid #ff7b00;
     opacity: 0px;
