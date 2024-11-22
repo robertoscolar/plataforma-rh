@@ -5,10 +5,12 @@
         display: flex;
         align-items: center;
         justify-content: center;   
-
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
         margin-bottom: 1%;
     }
 }
+
 
 .container_cadastro { 
     width: 70%;
