@@ -1,4 +1,5 @@
 <img src="images/images/logo/construtech.png" alt="Construtech Recrutamento" class="logo">
+<link rel="stylesheet" href="css/main.css">
 <navbar class="menu">
     <ul class="menu_itens">
         <li>

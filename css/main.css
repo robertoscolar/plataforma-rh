@@ -23,6 +23,7 @@ body {
 .cabecalho {
     display: flex;
     height: 100%;
+    
 }
 
 .logo {
@@ -58,6 +59,19 @@ body {
     text-decoration: none;
     color: #fff;
     font-weight: 100;
+    padding: 10px 15px;  /* Adiciona um pouco de espaço para o efeito de hover */
+    display: inline-block;  /* Para garantir que o efeito ocupe todo o item */
+    transition: background-color 0.3s ease;  /* Suaviza a transição */
+}
+
+.menu_itens li a:hover {
+    background-color: #000000; /* Laranja */
+    color: white;  /* Garantir que o texto se mantenha branco */
+}
+
+/* Active - Quando o item é clicado */
+.menu_itens li a:active {
+    background-color: #ffffff; /* Cor laranja mais escura para indicar o clique */
 }
 
 
