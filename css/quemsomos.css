@@ -256,6 +256,7 @@
 .contato button:active {
     transform: translateY(1px); /* Efeito de "pressionamento" */
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1); /* Sombra mais sutil no clique */
+    
 }
 
 
