@@ -15,8 +15,6 @@
     position: relative; 
 } */
 
-
-
 .introducao p {
     font-family: 'Kiwi Maru', serif;
     font-size: 20px;
@@ -58,6 +56,7 @@
     background-position: center;    
     background-repeat: no-repeat;    
     border-radius: 40px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
 }
 
 .cor-preta {
@@ -88,6 +87,7 @@
     background-repeat: no-repeat;
     border-radius: 90px;
     margin-left: 0;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
 }
 
 .oque_fazemos p {
@@ -205,6 +205,12 @@
     align-items: center;
     gap: 10px;
 }
+
+* image {
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+
 
 .depoimentos_cliente01, .depoimentos_cliente02, .depoimentos_cliente03 {
     width: 200px;
