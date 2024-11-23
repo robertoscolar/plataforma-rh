@@ -53,26 +53,27 @@ body {
     border-radius: 0px 0px 10px 10px;
     margin-bottom: 0;
     margin-top: 30px;
+    
 }
 
 .menu_itens li a {
     text-decoration: none;
-    color: #fff;
+    color: #ffffff;
     font-weight: 100;
     padding: 10px 15px;  /* Adiciona um pouco de espaço para o efeito de hover */
     display: inline-block;  /* Para garantir que o efeito ocupe todo o item */
+    border-radius: 8px 8px 8px 8px;
+    
     transition: background-color 0.3s ease;  /* Suaviza a transição */
 }
 
 .menu_itens li a:hover {
-    background-color: #000000; /* Laranja */
-    color: white;  /* Garantir que o texto se mantenha branco */
+    border: 1px solid #ffffff;
+    background-color: rgb(0, 0, 0); /* Laranja */    
 }
 
 /* Active - Quando o item é clicado */
-.menu_itens li a:active {
-    background-color: #ffffff; /* Cor laranja mais escura para indicar o clique */
-}
+
 
 
 .home_label {
