@@ -28,9 +28,8 @@
             <button class="botao_1">
                 <a href="quemsomos.php">SAIBA MAIS</a>
             </button>
-        </div>
-    </section>
-
+        </div> <!-- Fechando a div .container_conteudo_principal -->
+    </section> <!-- Fechando a section .conteudo_principal -->
     <footer class="rodape">
         <?php
             include 'components/footer.php';

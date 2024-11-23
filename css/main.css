@@ -36,6 +36,10 @@ body {
     display: flex;
     justify-content: right;
     align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: #000000;
 }
 
 .menu_itens {
@@ -55,6 +59,8 @@ body {
     
 }
 
+
+
 .menu_itens li a {
     text-decoration: none;
     color: #ffffff;
@@ -68,16 +74,16 @@ body {
 .menu_itens li a:hover {
     border: 1px solid #ffffff;
     background-color: rgb(0, 0, 0); /* Laranja */    
+    transform: translateY(1px); /* Efeito de "pressionamento" */
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1); /* Sombra mais sutil no clique */
 }
 
 /* Active - Quando o item é clicado */
 
-
-
-.home_label {
+/* .home_label {
     font-weight: 450 !important;
     font-family: 'Poppins', sans-serif;
-}
+} */
 
 .conteudo_principal {
     background-image: url('../images/images/background/body_backgroud.png');
@@ -106,6 +112,8 @@ body {
     margin-bottom: 30px;
     font-family: 'Poppins', sans-serif;
 }
+
+
 
 .rodape {
     display: flex;
@@ -211,17 +219,16 @@ body {
 }
 
 .botao_1:hover {
-    padding: 30px;
-    border-radius: 8px 8px 8px 8px;
-    border: 1px solid #ff7b00;
-    opacity: 0px;
-    background: rgba(0,0,0,0);
+    background-color: #000000; /* Mudança de cor */
+    transform: translateX(3px); /* O botão sobe */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1); /* Sombra suave ao passar o mouse */
+}
 
-    font-weight: 500;
-    color: #ff7b00;  
-    
-    a {
-        color: #ff7b00;
-        text-decoration: none;
-    }
+button {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.button:active {
+    transform: translateY(1px); /* Efeito de "pressionamento" */
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1); /* Sombra mais sutil no clique */
 }

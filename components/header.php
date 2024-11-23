@@ -12,7 +12,7 @@
             <a href="nossas_solucoes.php" class="home_label">NOSSAS SOLUÇÕES</a>
         </li> -->
         <li>
-            <a href="cadastro.php" class="home_label">CADASTRO DE CURRÍCULO</a>
+            <a href="cadastro.php" class="home_label">TRABALHE CONOSCO</a>
         </li>
         <li>
             <a href="fale_conosco.php" class="home_label">FALE CONOSCO</a>
