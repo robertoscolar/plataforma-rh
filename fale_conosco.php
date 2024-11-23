@@ -29,7 +29,7 @@
     </header>
 
     <section class="conteudo_principal">
-        <h1>CADASTRO DE CONTATO</h1>
+        <h1>ENTRE EM CONTATO</h1>
         <div class="container_principal">
           <div class="container_cadastro">
             <h2 class="legenda_principal">Preencha os dados abaixo</h2>
@@ -67,7 +67,7 @@
                   name="evidencia">
                 </div>
                 
-                <button class="botao_1" type="submit">Cadastrar</button>
+                <button class="botao_1" type="submit">Enviar</button>
                 <button class="botao_1" type="reset">Limpar</button>
                 
               </form>

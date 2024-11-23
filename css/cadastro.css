@@ -13,8 +13,8 @@
 
 
 .container_cadastro { 
-    width: 70%;
-    margin: auto;
+    width: 30%;
+    /* margin: auto; */
     border-radius: 8px 8px 8px 8px;
     padding: 0.5% 1% 0.5% 1%;
 
@@ -41,3 +41,51 @@
 .comentario {
     margin-bottom: 15px !important;
 }
+
+.tamanho{
+    width: 49%;
+}
+
+
+.form_explicativo {
+    /* display: flex; */
+    margin-left: 10%;  /* Para dar algum espaço do lado esquerdo */
+
+    h1 {
+        color: #FF7420;
+        font-weight: 600;
+    }
+}
+
+.container_cadastro {
+    margin-top: 5%;
+    width: 60%;  /* Ajusta a largura do formulário para ocupar 60% da largura do contêiner */
+    margin-left: 16%;
+    /* margin-right: 4%; */
+}
+
+.conteiner_explicativo {
+    margin-top: 4%;
+    width: 90%;  /* Ajusta a largura da seção explicativa */
+    text-align: center; /* Centraliza o texto */
+
+}
+
+.img_cadastro {
+    margin-top: 5%;
+    font-family: 'Kiwi Maru', serif;
+    font-size: 20px;
+    color: #000000;  
+    margin-top: 10px;
+    /* margin-left: 120px; */
+    text-align: center;
+}
+
+.botao-container {
+    display: flex; /* Usa flexbox para alinhar os botões */
+    justify-content: start; /* Centraliza os botões horizontalmente */
+    margin-top: 20px; /* Adiciona uma margem superior (opcional) */
+    gap: 20px;
+}
+
+

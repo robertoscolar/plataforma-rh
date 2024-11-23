@@ -15,6 +15,7 @@
 
 .container_principal {
     display: flex;
+    margin: 40px;
 }
 
 .container_cadastro { 
