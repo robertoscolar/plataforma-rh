@@ -45,12 +45,11 @@ body {
     width: 925px;
     background-color: #ff7b00;
     z-index : 11;
-
     height: 88px;
     top: 78px;
     left: 515px;
     gap: 0px;
-    border-radius: 0px 0px 10px 10px;
+    border-radius: 12px 12px 12px 12px;
     margin-bottom: 0;
     margin-top: 30px;
     
@@ -63,7 +62,6 @@ body {
     padding: 10px 15px;  /* Adiciona um pouco de espaço para o efeito de hover */
     display: inline-block;  /* Para garantir que o efeito ocupe todo o item */
     border-radius: 8px 8px 8px 8px;
-    
     transition: background-color 0.3s ease;  /* Suaviza a transição */
 }
 

@@ -8,9 +8,9 @@
         <li>
             <a href="quemsomos.php" class="home_label">QUEM SOMOS</a>
         </li>
-        <li>
+        <!-- <li>
             <a href="nossas_solucoes.php" class="home_label">NOSSAS SOLUÇÕES</a>
-        </li>
+        </li> -->
         <li>
             <a href="cadastro.php" class="home_label">CADASTRO DE CURRÍCULO</a>
         </li>
