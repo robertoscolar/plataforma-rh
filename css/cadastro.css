@@ -70,7 +70,6 @@
     text-align: center; /* Centraliza o texto */
 
 }
-
 .img_cadastro {
     margin-top: 5%;
     font-family: 'Kiwi Maru', serif;
@@ -80,7 +79,7 @@
     /* margin-left: 120px; */
     text-align: center;
 }
-
+    
 .botao-container {
     display: flex; /* Usa flexbox para alinhar os botões */
     justify-content: start; /* Centraliza os botões horizontalmente */

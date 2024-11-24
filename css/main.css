@@ -221,7 +221,7 @@ body {
 .botao_1:hover {
     background-color: #000000; /* Mudança de cor */
     transform: translateX(3px); /* O botão sobe */
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1); /* Sombra suave ao passar o mouse */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.90); /* Sombra suave ao passar o mouse */
 }
 
 button {
@@ -231,4 +231,5 @@ button {
 .button:active {
     transform: translateY(1px); /* Efeito de "pressionamento" */
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1); /* Sombra mais sutil no clique */
+    
 }

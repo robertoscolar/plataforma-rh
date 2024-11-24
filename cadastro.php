@@ -27,11 +27,11 @@
     </header>
 
     <section class="conteudo_principal">
-     <h1>COMECE SUA PRÓXIMA GRANDE OPORTUNIDADE!</h1>
+     <h1>SEJA PARTE DE NOSSO TIME!</h1>
     <div class="form_explicativo">
     <div class="conteiner_explicativo">
         <!-- <h1>Dê o primeiro passo para sua próxima grande oportunidade!</h1> -->
-        <p class="img_cadastro">Preencha seu currículo aqui e mostre ao mundo o que você tem de melhor. Esta página foi feita para ajudar você a destacar suas habilidades e experiências de forma rápida e prática. Ao cadastrar seu currículo, você estará abrindo portas para novas possibilidades e dando o primeiro passo para a sua próxima grande oportunidade.</p>
+        <p class="img_cadastro">Estamos sempre em busca de pessoas talentosas e apaixonadas pelo que fazem. Se você quer crescer, aprender e contribuir com sua experiência, essa é a sua chance. Preencha seu currículo e mostre como você pode fazer a diferença aqui!</p>
         <div class="img"></div></div>
     <div class="container_cadastro">
         <h2 class="legenda_principal">Preencha os dados abaixo</h2>
@@ -42,7 +42,7 @@
                     <input type="text" class="form-control" placeholder="Nome" aria-label="Nome" name="nome" maxlength="100">
                 </div>
                 <div class="col">
-                    <input type="NUMBER" class="form-control" placeholder="CPF" aria-label="CPF" maxlength="100" name="CPF">
+                    <input type="" class="form-control" placeholder="CPF" aria-label="CPF" maxlength="100" name="CPF">
                 </div>
             </div>
 

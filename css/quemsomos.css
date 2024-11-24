@@ -254,9 +254,9 @@
 }
 
 .contato button:hover {
-    background-color: #FF7420; /* Mudança de cor */
+    background-color: #000; /* Mudança de cor */
     transform: translateX(3px); /* O botão sobe */
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1); /* Sombra suave ao passar o mouse */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.90); /* Sombra suave ao passar o mouse */
 }
 
 .contato button:active {
@@ -268,12 +268,12 @@
 
 .contato button {
     border-radius: 10px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 32px;
     color: white;
     margin-left: 10px; 
     max-width: 80%; 
-    background: black;
+    background: #FF7420;
     z-index: 10px !important;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }

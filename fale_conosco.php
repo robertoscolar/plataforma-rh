@@ -29,55 +29,58 @@
     </header>
 
     <section class="conteudo_principal">
-        <h1>ENTRE EM CONTATO</h1>
-        <div class="container_principal">
-          <div class="container_cadastro">
-            <h2 class="legenda_principal">Preencha os dados abaixo</h2>
-            <p class="legenda_secundaria">* Lembre-se de que todos os campos são obrigatórios</p>
+    <h1>ENTRE EM CONTATO</h1>
+    <div class="form_explicativo">
+        <div class="conteiner_explicativo">
+            <p>Preencha seu currículo aqui e mostre ao mundo o que você tem de melhor. Esta página foi feita para ajudar você a destacar suas habilidades e experiências de forma rápida e prática. Ao cadastrar seu currículo, você estará abrindo portas para novas possibilidades e dando o primeiro passo para a sua próxima grande oportunidade.</p>
             
-            <form action="php/action/faleConoscoAction.php" method="POST" enctype="multipart/form-data">
-              <div class="row">
-                <div class="col">
-                  <input type="text" class="form-control" placeholder="Nome" aria-label="Nome" name="nome"
-                  maxlength="100">
-                </div>
-                <div class="col">
-                  <input type="text" class="form-control" placeholder="CPF" aria-label="cpf"
-                  maxlength="100" name="cpf">
-                    </div>
-                  </div>
-                  
-                  <div class="row">
-                    <div class="col">
-                      <input type="email" class="form-control" placeholder="E-mail" aria-label="E-mail"
-                      maxlength="255" name="email">
-                    </div>
-                    <div class="col">
-                      <input type="text" class="form-control" placeholder="Telefone" aria-label="Telefone"
-                      maxlength="15" minlength="14" id="telefone" name="telefone">
-                    </div>
-                  </div>
+            <!-- Container que organiza o formulário e o mapa ao lado -->
+            <div class="container_form_mapa">
+                <!-- Formulário de Cadastro -->
+                <div class="container_cadastro">
+                    <h2 class="legenda_principal">Preencha os dados abaixo</h2>
+                    <p class="legenda_secundaria">* Lembre-se de que todos os campos são obrigatórios</p>
+                    <form action="php/action/faleConoscoAction.php" method="POST" enctype="multipart/form-data">
+                        <div class="row">
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Nome" aria-label="Nome" name="nome" maxlength="100">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="CPF" aria-label="cpf" maxlength="100" name="cpf">
+                            </div>
+                        </div>
 
-                <textarea class="form-control" style="margin-bottom: 15px;" rows="3" placeholder="Comentários..."
-                maxlength="1000" name="comentario"></textarea>
-                
-                <div class="mb-3">
-                  <label for="evidencia" class="form-label">Anexar evidência (somente .pdf):</label>
-                  <input class="form-control" type="file" id="evidencia" style="width: 86%;" accept="application/pdf"
-                  name="evidencia">
+                        <div class="row">
+                            <div class="col">
+                                <input type="email" class="form-control" placeholder="E-mail" aria-label="E-mail" maxlength="255" name="email">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Telefone" aria-label="Telefone" maxlength="15" minlength="14" id="telefone" name="telefone">
+                            </div>
+                        </div>
+
+                        <textarea class="form-control" style="margin-bottom: 15px;" rows="3" placeholder="Comentários..." maxlength="1000" name="comentario"></textarea>
+
+                        <div class="mb-3">
+                            <label for="evidencia" class="form-label">Anexar evidência (somente .pdf):</label>
+                            <input class="form-control" type="file" id="evidencia" style="width: 86%;" accept="application/pdf" name="evidencia">
+                        </div>
+
+                        <button class="botao_1" type="submit">Enviar</button>
+                        <button class="botao_1" type="reset">Limpar</button>
+                    </form>
                 </div>
                 
-                <button class="botao_1" type="submit">Enviar</button>
-                <button class="botao_1" type="reset">Limpar</button>
-                
-              </form>
-            </div>
-
-            <div class="container_mapa">
-              <div id="map"></div>
+                <!-- Mapa -->
+                <div class="container_mapa">
+                    <div id="map"></div>
+                </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
+
 
     <footer class="rodape">
         <?php
