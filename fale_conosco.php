@@ -32,7 +32,7 @@
     <h1>ENTRE EM CONTATO</h1>
     <div class="form_explicativo">
         <div class="conteiner_explicativo">
-            <p>Preencha seu currículo aqui e mostre ao mundo o que você tem de melhor. Esta página foi feita para ajudar você a destacar suas habilidades e experiências de forma rápida e prática. Ao cadastrar seu currículo, você estará abrindo portas para novas possibilidades e dando o primeiro passo para a sua próxima grande oportunidade.</p>
+            <p>Entre em contato conosco! Se você tiver alguma dúvida ou precisar de mais informações, estamos aqui para ajudar. <BR>Envie sua mensagem e nossa equipe responderá o mais rápido possível para oferecer o suporte que você precisa.</p>
             
             <!-- Container que organiza o formulário e o mapa ao lado -->
             <div class="container_form_mapa">
