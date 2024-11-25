@@ -21,7 +21,7 @@
 .container_cadastro { 
     width: 45%;
     margin: auto;
-    margin-left: 20%;
+    margin-left: 11%;
     margin-right: 1%;
     border-radius: 8px 8px 8px 8px;
     padding: 0.5% 1% 0.5% 1%;
@@ -35,7 +35,7 @@
 .container_mapa { 
     width: 70%;
     margin: auto;
-    margin-left: 5%;
+    margin-left: 11%;
     margin-right: 8%;
     border-radius: 8px 8px 8px 8px;
     padding: 0.5% 1% 0.5% 1%;
@@ -110,7 +110,7 @@
 
 
 .container_mapa {
-    flex: 2;
+    flex: 3;
     height: 400px; /* Defina uma altura apropriada para o mapa */
     border-radius: 8px;
 }
@@ -173,8 +173,13 @@ h1 {
 
 
 #map {
-    width: 80%;   
+    width: 90%;   
     height: 400px;
     border-radius: 64px;
     box-shadow: 0px 4px 15px rgba(4, 4, 4, 4.3), 0px 0px 10px rgba(2, 2, 2, 2.3);
 }   
+.form-label
+{
+    margin-bottom: .5rem;
+    display: flex;
+}

@@ -39,20 +39,20 @@
                 <!-- Formulário de Cadastro -->
                 <div class="container_cadastro">
                     <h2 class="legenda_principal">Preencha os dados abaixo</h2>
-                    <p class="legenda_secundaria">* Lembre-se de que todos os campos são obrigatórios</p>
+                    <p class="legenda_secundaria">* Lembre-se que alguns campos são obrigatórios</p>
                     <form action="php/action/faleConoscoAction.php" method="POST" enctype="multipart/form-data">
                         <div class="row">
                             <div class="col">
-                                <input type="text" class="form-control" placeholder="Nome" aria-label="Nome" name="nome" maxlength="100">
+                                <input type="text" class="form-control" placeholder="* Nome" aria-label="Nome" name="nome" maxlength="100">
                             </div>
                             <div class="col">
-                                <input type="text" class="form-control" placeholder="CPF" aria-label="cpf" maxlength="100" name="cpf">
+                                <input type="text" class="form-control" placeholder="* CPF/CNPJ" aria-label="cpf" maxlength="100" name="cpf">
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="col">
-                                <input type="email" class="form-control" placeholder="E-mail" aria-label="E-mail" maxlength="255" name="email">
+                                <input type="email" class="form-control" placeholder="*E-mail" aria-label="E-mail" maxlength="255" name="email">
                             </div>
                             <div class="col">
                                 <input type="text" class="form-control" placeholder="Telefone" aria-label="Telefone" maxlength="15" minlength="14" id="telefone" name="telefone">
