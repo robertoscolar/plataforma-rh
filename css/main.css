@@ -345,3 +345,15 @@ button {
         background-color: #2D3E4E;
     }
 }
+
+
+@media only screen and (max-width: 768px) {
+
+    .conteudo_principal {
+        padding-top: 120px;
+    }
+
+    .titulo {
+        font-size: 200%;
+    }
+}
