@@ -1,7 +1,11 @@
-<img src="images/images/logo/construtech.png" alt="Construtech Recrutamento" class="logo">
-<link rel="stylesheet" href="css/main.css">
+<a href="index.php">
+    <img src="images/images/logo/construtech.png" alt="Construtech Recrutamento" class="logo">
+</a>
 <navbar class="menu">
-    <ul class="menu_itens">
+    <ul class="menu_itens" id="menu_itens">
+        <a class="fechar_menu" href="javascript:void(0);" onclick="showMenuItems()">
+            <i> -> </i>
+        </a>
         <li>
             <a href="index.php" class="home_label">HOME</a>
         </li>
@@ -19,3 +23,7 @@
         </li>
     </ul>
 </navbar>
+
+<a href="javascript:void(0);" class="icon" onclick="showMenuItems()">
+    <i class="fa fa-bars"></i>
+</a>
