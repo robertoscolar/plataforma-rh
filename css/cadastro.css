@@ -184,7 +184,7 @@
         flex-direction: row; /* Garante que os botões fiquem lado a lado */
         justify-content: space-between;
         width: 100%; /* Ocupa toda a largura disponível */
-        gap: 15px; /* Distância entre os botões */
+        gap: 1px; /* Distância entre os botões */
     }
 
     .botao_1 {
