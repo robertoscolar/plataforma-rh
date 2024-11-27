@@ -22,7 +22,7 @@
 .container_cadastro { 
     width: 45%;
     margin: auto;
-    margin-left: 5%; /* Ajustado para maior flexibilidade */
+    margin-left: 25%; /* Ajustado para maior flexibilidade */
     margin-right: 5%;
     border-radius: 8px;
     padding: 1%;
@@ -131,6 +131,14 @@
     .container_cadastro, .container_mapa {
         width: 100%;
         margin-bottom: 20px;
+    }
+
+    .container_cadastro {
+        margin-left: 0;
+    }
+
+    .form_explicativo {
+        margin-right: 5%;
     }
 
     .container_mapa {
