@@ -127,7 +127,7 @@ h1 {
     border-radius: 5px;
 }
 
-/* Botão */
+/* Botões */
 .botao_1 {
     padding: 15px;
     border-radius: 8px;
@@ -136,9 +136,8 @@ h1 {
     background-color: #ff7b00;
     font-weight: 500;
     color: #fff;
-    float: left;
     margin-left: 13px;
-    width: 20%;
+    width: auto; /* Largura automática */
 }
 
 .botao_1:hover {
@@ -148,8 +147,8 @@ h1 {
 /* Responsividade: Ajustes para telas menores */
 @media (max-width: 768px) {
     .container_form_mapa {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: column; /* Mudança para coluna, empilhando os itens verticalmente */
+        align-items: center; /* Centraliza os itens */
     }
 
     .container_cadastro, .container_mapa {
@@ -164,6 +163,21 @@ h1 {
     .form_explicativo p {
         font-size: 16px; 
     }
+
+    /* Ajuste para o contêiner de botões */
+    .botao-container {
+        display: flex;
+        justify-content: center; /* Centraliza os botões */
+        gap: 10px; /* Espaço entre os botões */
+        width: 100%;
+    }
+
+    /* Ajuste de tamanho dos botões em telas pequenas */
+    .botao_1 {
+        padding: 10px 15px; /* Ajuste no padding */
+        width: auto; /* Largura automática */
+        margin-top: 10px; /* Distância superior entre os botões */
+    }
 }
 
 /* Responsividade para telas menores que 576px */
@@ -171,7 +185,28 @@ h1 {
     .container_cadastro input,
     .container_cadastro textarea,
     .container_cadastro button {
-        font-size: 14px;
+        font-size: 14px; /* Tamanho da fonte reduzido para inputs e botões */
+    }
+
+    .container_cadastro {
+        width: 100%; /* Contêiner ocupa toda a largura da tela */
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    /* Botões lado a lado */
+    .botao-container {
+        flex-direction: row; /* Garante que os botões fiquem lado a lado */
+        justify-content: space-between;
+        width: 100%; /* Ocupa toda a largura disponível */
+        gap: 15px; /* Distância entre os botões */
+    }
+
+    .botao_1 {
+        width: 45%; /* Ajusta a largura dos botões para ficarem menores e lado a lado */
+        margin-left: 0;
+        margin-top: 0;
+        padding: 10px 20px; /* Ajuste de padding para botões menores */
     }
 }
 
