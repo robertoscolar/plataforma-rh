@@ -316,7 +316,7 @@ button {
         right: 0; 
         bottom: 0;
         width: 100vw;
-        height: 280px;
+        height: 300px;
         margin-top: 0;
         background-color: #ff7b00;
         margin-left: 9%;
@@ -338,7 +338,7 @@ button {
         text-align: center;
         display: flex;
         justify-content: center;
-        margin-bottom: 5%;
+        margin-bottom: 3%;
         padding-top: 1.5%;
         padding-bottom: 1.5%;
         text-decoration: none;
