@@ -39,7 +39,7 @@
         <form action="php/action/cadastroCurriculo.php" method="POST" enctype="multipart/form-data">
             <div class="row">
                 <div class="col">
-                    <input type="text" class="form-control" placeholder="Nome" aria-label="Nome" name="nome" maxlength="100">
+                    <input type="text" class="form-control" placeholder="Nome Completo" aria-label="Nome" name="nome" maxlength="100">
                 </div>
                 <div class="col">
                     <input type="" class="form-control" placeholder="CPF" aria-label="CPF" maxlength="100" name="CPF">

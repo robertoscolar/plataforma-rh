@@ -38,13 +38,28 @@ USE construtech;
 
 CREATE TABLE `cadastro` (
   `id` int(11) NOT NULL,
-  `nome` varchar(100) NOT NULL,
-  `sobrenome` varchar(100) NOT NULL,
+  `nomeCompleto` varchar(100) NOT NULL,
+  `cpf` varchar(14) NOT NULL,
   `email` varchar(255) NOT NULL,
   `telefone` varchar(15) NOT NULL,
   `comentario` varchar(1000) NOT NULL,
   `dataHoraInclusao` datetime NOT NULL,
   `curriculo` longtext NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Table structure for table `contato`
+--
+
+CREATE TABLE `contato` (
+  `id` int(11) NOT NULL,
+  `nomeCompleto` varchar(100) NOT NULL,
+  `cpf` varchar(14) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `telefone` varchar(15) NULL,
+  `comentario` varchar(1000) NOT NULL,
+  `dataHoraInclusao` datetime NOT NULL,
+  `evidencia` longtext NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
@@ -58,6 +73,12 @@ ALTER TABLE `cadastro`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `contato`
+--
+ALTER TABLE `contato`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -67,6 +88,14 @@ ALTER TABLE `cadastro`
 ALTER TABLE `cadastro`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
 COMMIT;
+
+--
+-- AUTO_INCREMENT for table `contato`
+--
+ALTER TABLE `contato`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
+COMMIT;
+
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

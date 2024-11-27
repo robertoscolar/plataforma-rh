@@ -47,7 +47,7 @@
                     <form action="php/action/faleConoscoAction.php" method="POST" enctype="multipart/form-data">
                         <div class="row">
                             <div class="col">
-                                <input type="text" class="form-control" placeholder="* Nome" aria-label="Nome" name="nome" maxlength="100">
+                                <input type="text" class="form-control" placeholder="* Nome Completo" aria-label="Nome" name="nome" maxlength="100">
                             </div>
                             <div class="col">
                                 <input type="text" class="form-control" placeholder="* CPF/CNPJ" aria-label="cpf" maxlength="100" name="cpf">
@@ -56,14 +56,14 @@
 
                         <div class="row">
                             <div class="col">
-                                <input type="email" class="form-control" placeholder="*E-mail" aria-label="E-mail" maxlength="255" name="email">
+                                <input type="email" class="form-control" placeholder="* E-mail" aria-label="E-mail" maxlength="255" name="email">
                             </div>
                             <div class="col">
                                 <input type="text" class="form-control" placeholder="Telefone" aria-label="Telefone" maxlength="15" minlength="14" id="telefone" name="telefone">
                             </div>
                         </div>
 
-                        <textarea class="form-control" style="margin-bottom: 15px;" rows="3" placeholder="Comentários..." maxlength="1000" name="comentario"></textarea>
+                        <textarea class="form-control" style="margin-bottom: 15px;" rows="3" placeholder="* Comentários..." maxlength="1000" name="comentario"></textarea>
 
                         <div class="mb-3">
                             <label for="evidencia" class="form-label">Anexar evidência (somente .pdf):</label>
