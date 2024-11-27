@@ -106,6 +106,7 @@ body {
 }
 
 .titulo {
+    
     width: 60%;
     font-size: 400%;
     font-weight: bold;
@@ -115,20 +116,26 @@ body {
 
 
 
-.rodape {
-    display: flex;
-    background-color: #2D3E4E;
-    width: 100%;
-    justify-content: space-between;
-    padding-top: 2%;
-    font-family: 'Poppins', sans-serif;
-}
 
 /* RODAPE */
 .container_rodape {
     /* width: 80%; */
     display: flex;
-    gap: 0px;
+    /* gap: 0px; */
+    margin: auto;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+.rodape {
+    /* display: flex; */
+    background-color: #2D3E4E;
+    width: 100%;
+    justify-content: left;
+    padding-top: 2%;
+    font-family: 'Poppins', sans-serif;
+
 }
 
 .titulo_rodape {
