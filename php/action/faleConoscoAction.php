@@ -67,6 +67,9 @@ try {
     $mail->Username = "envio@conectesites.com.br";
     $mail->Password = "cia2015@@";
     $mail->AddReplyTo('senac@conectesites.com.br', 'Construtech Recrutamento');
+    //$mail->AddReplyTo('roberto.bscolar@senacsp.edu.br', 'Gerencial');
+    //$mail->AddReplyTo('gabriel.asantos102@senacsp.edu.br', 'Gerencial');
+    //$mail->AddReplyTo('rafael.caraujo11@senacsp.edu.br', 'Gerencial');
     $mail->SetFrom('senac@conectesites.com.br', 'Construtech Recrutamento');
     $mail->AddAddress("$email", "$nome");
     $mail->Subject = "=?UTF-8?B?" . base64_encode("Fale Conosco - $nome") . "?=";
