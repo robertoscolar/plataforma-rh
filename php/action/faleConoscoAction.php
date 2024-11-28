@@ -37,7 +37,7 @@ if ($fileType != 'application/pdf') {
 }
 
 $nome = isset($_POST['nome']) ? $_POST['nome'] : '';
-$cpf = isset($_POST['cpf']) ? $_POST['cpf'] : '';
+$cpfCnpj = isset($_POST['cpfCnpj']) ? $_POST['cpfCnpj'] : '';
 $email = isset($_POST['email']) ? $_POST['email'] : '';
 $telefone = isset($_POST['telefone']) ? $_POST['telefone'] : '';
 $comentario = isset($_POST['comentario']) ? $_POST['comentario'] : '';
@@ -62,7 +62,7 @@ $stmt = $conn->prepare("
 $stmt->bind_param(
     "sssssss",
     $nome,
-    $cpf,
+    $cpfCnpj,
     $email,
     $telefone,
     $comentario,
@@ -76,7 +76,7 @@ if ($stmt->execute()) {
     //Substitui variaveis do template
     $body = file_get_contents('../../email/template-email_contato.html');
     $body = str_replace('{{:nome}}', $nome, $body);
-    $body = str_replace('{{:cpf}}', $cpf, $body);
+    $body = str_replace('{{:cpfCnpj}}', $cpfCnpj, $body);
     $body = str_replace('{{:email}}', $email, $body);
     $body = str_replace('{{:telefone}}', $telefone, $body);
     $body = str_replace('{{:comentario}}', $comentario, $body);

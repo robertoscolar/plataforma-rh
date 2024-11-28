@@ -50,7 +50,7 @@
                                 <input type="text" class="form-control" placeholder="* Nome Completo" aria-label="Nome" name="nome" maxlength="100">
                             </div>
                             <div class="col">
-                                <input type="text" class="form-control" placeholder="* CPF/CNPJ" aria-label="cpf" maxlength="18" name="cpf">
+                                <input type="text" class="form-control" placeholder="* CPF/CNPJ" aria-label="cpfCnpj" maxlength="18" name="cpfCnpj">
                             </div>
                         </div>
 
