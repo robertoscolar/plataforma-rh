@@ -42,56 +42,99 @@ $email = isset($_POST['email']) ? $_POST['email'] : '';
 $telefone = isset($_POST['telefone']) ? $_POST['telefone'] : '';
 $comentario = isset($_POST['comentario']) ? $_POST['comentario'] : '';
 
-//Substitui variaveis do template
-$body = file_get_contents('../../email/template-email_contato.html');
-$body = str_replace('{{:nome}}', $nome, $body);
-$body = str_replace('{{:cpf}}', $cpf, $body);
-$body = str_replace('{{:email}}', $email, $body);
-$body = str_replace('{{:telefone}}', $telefone, $body);
-$body = str_replace('{{:comentario}}', $comentario, $body);
-
-$mail = new PHPMailer(true);
-$mail->CharSet = "UTF-8";
-$mail->IsSMTP();
-
 $fileTmpPath = $_FILES['evidencia']['tmp_name'];
 $fileData = base64_encode(file_get_contents($fileTmpPath));
-$sanitizedFileName = "Evidencia " . strtr($nome, $unwanted_array) . ".pdf";
 
-try {
-    $mail->Host = "mail.conectesites.com.br";
-    $mail->SMTPDebug = 0;
-    $mail->SMTPAuth = true;
-    $mail->SMTPSecure = 'ssl';
-    $mail->Port = 465;
-    $mail->Username = "envio@conectesites.com.br";
-    $mail->Password = "cia2015@@";
-    $mail->AddReplyTo('senac@conectesites.com.br', 'Construtech Recrutamento');
-    //$mail->AddReplyTo('roberto.bscolar@senacsp.edu.br', 'Gerencial');
-    //$mail->AddReplyTo('gabriel.asantos102@senacsp.edu.br', 'Gerencial');
-    //$mail->AddReplyTo('rafael.caraujo11@senacsp.edu.br', 'Gerencial');
-    $mail->SetFrom('senac@conectesites.com.br', 'Construtech Recrutamento');
-    $mail->AddAddress("$email", "$nome");
-    $mail->Subject = "=?UTF-8?B?" . base64_encode("Fale Conosco - $nome") . "?=";
-    $mail->AltBody = "Não foi possível visualizar a mensagem, por favor, tente novamente!";
-    $mail->Body = $body;
-    $mail->addAttachment($fileTmpPath, "$sanitizedFileName");
-    $mail->send();
+$datetime = new DateTime(null, new DateTimeZone('America/Sao_Paulo'));
+$formattedDatetime = $datetime->format('Y-m-d H:i:s');
 
-} catch (phpmailerException $e) {
-    echo $e->errorMessage();
-} catch (Exception $e) {
-    echo $e->getMessage();
-}
+$stmt = $conn->prepare("
+    INSERT INTO contato (  nomeCompleto, 
+                            cpfCnpj, 
+                            email, 
+                            telefone, 
+                            comentario, 
+                            dataHoraInclusao,
+                            evidencia) 
+    VALUES (?, ?, ?, ?, ?, ?, ?)"
+);
 
-echo "
+$stmt->bind_param(
+    "sssssss",
+    $nome,
+    $cpf,
+    $email,
+    $telefone,
+    $comentario,
+    $formattedDatetime,
+    $fileData
+);
+
+if ($stmt->execute()) {
+    $stmt->close();
+
+    //Substitui variaveis do template
+    $body = file_get_contents('../../email/template-email_contato.html');
+    $body = str_replace('{{:nome}}', $nome, $body);
+    $body = str_replace('{{:cpf}}', $cpf, $body);
+    $body = str_replace('{{:email}}', $email, $body);
+    $body = str_replace('{{:telefone}}', $telefone, $body);
+    $body = str_replace('{{:comentario}}', $comentario, $body);
+
+    $mail = new PHPMailer(true);
+    $mail->CharSet = "UTF-8";
+    $mail->IsSMTP();
+
+    $sanitizedFileName = "Evidencia " . strtr($nome, $unwanted_array) . ".pdf";
+
+    try {
+        $mail->Host = "mail.conectesites.com.br";
+        $mail->SMTPDebug = 0;
+        $mail->SMTPAuth = true;
+        $mail->SMTPSecure = 'ssl';
+        $mail->Port = 465;
+        $mail->Username = "envio@conectesites.com.br";
+        $mail->Password = "cia2015@@";
+        $mail->AddReplyTo('senac@conectesites.com.br', 'Construtech Recrutamento');
+        //$mail->AddReplyTo('roberto.bscolar@senacsp.edu.br', 'Gerencial');
+        //$mail->AddReplyTo('gabriel.asantos102@senacsp.edu.br', 'Gerencial');
+        //$mail->AddReplyTo('rafael.caraujo11@senacsp.edu.br', 'Gerencial');
+        $mail->SetFrom('senac@conectesites.com.br', 'Construtech Recrutamento');
+        $mail->AddAddress("$email", "$nome");
+        $mail->Subject = "=?UTF-8?B?" . base64_encode("Fale Conosco - $nome") . "?=";
+        $mail->AltBody = "Não foi possível visualizar a mensagem, por favor, tente novamente!";
+        $mail->Body = $body;
+        $mail->addAttachment($fileTmpPath, "$sanitizedFileName");
+        $mail->send();
+
+    } catch (phpmailerException $e) {
+        echo $e->errorMessage();
+    } catch (Exception $e) {
+        echo $e->getMessage();
+    }
+
+    echo "
+            <script>
+                Swal.fire({
+                    title: 'Sucesso!',
+                    text: 'Formulário processado com sucesso. Cheque sua caixa de e-mail!',
+                    icon: 'success',
+                    confirmButtonText: 'OK'
+                }).then(function() {
+                    window.location.href = '../../index.php';
+                });
+            </script>";
+
+} else {
+    echo "
         <script>
             Swal.fire({
-                title: 'Sucesso!',
-                text: 'Cadastro realizado com sucesso. Cheque sua caixa de e-mail!',
-                icon: 'success',
+                title: 'ERRO!',
+                text: 'Erro ao processar formulário. Tente novamente!',
+                icon: 'error',
                 confirmButtonText: 'OK'
             }).then(function() {
-                window.location.href = '../../index.php';
+                window.location.href = '../../cadastro.php';
             });
-        </script>";
+        </script>"; 
+}

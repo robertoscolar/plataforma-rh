@@ -38,7 +38,7 @@ if ($fileType != 'application/pdf') {
 
 
 $nome = isset($_POST['nome']) ? $_POST['nome'] : '';
-$sobrenome = isset($_POST['sobrenome']) ? $_POST['sobrenome'] : '';
+$cpf = isset($_POST['cpf']) ? $_POST['cpf'] : '';
 $email = isset($_POST['email']) ? $_POST['email'] : '';
 $telefone = isset($_POST['telefone']) ? $_POST['telefone'] : '';
 $comentario = isset($_POST['comentario']) ? $_POST['comentario'] : '';
@@ -50,8 +50,8 @@ $datetime = new DateTime(null, new DateTimeZone('America/Sao_Paulo'));
 $formattedDatetime = $datetime->format('Y-m-d H:i:s');
 
 $stmt = $conn->prepare("
-    INSERT INTO cadastro (  nome, 
-                            sobrenome, 
+    INSERT INTO cadastro (  nomeCompleto, 
+                            cpf, 
                             email, 
                             telefone, 
                             comentario, 
@@ -63,7 +63,7 @@ $stmt = $conn->prepare("
 $stmt->bind_param(
     "sssssss",
     $nome,
-    $sobrenome,
+    $cpf,
     $email,
     $telefone,
     $comentario,
@@ -77,7 +77,7 @@ if ($stmt->execute()) {
     //Substitui variaveis do template
     $body = file_get_contents('../../email/template-email_cadastro.html');
     $body = str_replace('{{:nome}}', $nome, $body);
-    $body = str_replace('{{:sobrenome}}', $sobrenome, $body);
+    $body = str_replace('{{:cpf}}', $cpf, $body);
     $body = str_replace('{{:email}}', $email, $body);
     $body = str_replace('{{:telefone}}', $telefone, $body);
     $body = str_replace('{{:comentario}}', $comentario, $body);
@@ -86,7 +86,7 @@ if ($stmt->execute()) {
     $mail ->CharSet = "UTF-8"; 
     $mail->IsSMTP();
 
-    $sanitizedFileName = "Curriculo " . strtr($nome, $unwanted_array) . " " . strtr($sobrenome, $unwanted_array) . ".pdf";
+    $sanitizedFileName = "Curriculo " . strtr($nome, $unwanted_array) . ".pdf";
 
     try {
         $mail->Host        = "mail.conectesites.com.br";
@@ -102,7 +102,7 @@ if ($stmt->execute()) {
         //$mail->AddReplyTo('rafael.caraujo11@senacsp.edu.br', 'Gerencial');
         $mail->SetFrom('senac@conectesites.com.br', 'Construtech Recrutamento');
         $mail->AddAddress("$email", "$nome");     
-        $mail->Subject = "=?UTF-8?B?".base64_encode("Cadastro de Currículo - $nome $sobrenome")."?=";
+        $mail->Subject = "=?UTF-8?B?".base64_encode("Cadastro de Currículo - $nome")."?=";
         $mail->AltBody = "Não foi possível visualizar a mensagem, por favor, tente novamente!";
         $mail->Body = $body;
         $mail->addAttachment($fileTmpPath, "$sanitizedFileName");

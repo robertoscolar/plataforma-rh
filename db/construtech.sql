@@ -54,7 +54,7 @@ CREATE TABLE `cadastro` (
 CREATE TABLE `contato` (
   `id` int(11) NOT NULL,
   `nomeCompleto` varchar(100) NOT NULL,
-  `cpf` varchar(14) NOT NULL,
+  `cpfCnpj` varchar(18) NOT NULL,
   `email` varchar(255) NOT NULL,
   `telefone` varchar(15) NULL,
   `comentario` varchar(1000) NOT NULL,

@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Função para validar o telefone
     function validarTelefone(telefone) {
         const telefoneLimpo = telefone.replace(/\D/g, '');
-        return telefoneLimpo.length >= 10;
+        resposta = (telefoneLimpo.length == 10 || telefoneLimpo.length == 11);
     }
 
     // Função para validar campos obrigatórios
@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const email = document.querySelector('[name="email"]');
         const telefone = document.querySelector('[name="telefone"]');
         const comentario = document.querySelector('[name="comentario"]');
-        const evidencia = document.querySelector('[name="evidencia"]');
+        const curriculo = document.querySelector('[name="curriculo"]');
         let mensagensErro = [];
 
         if (nome.value.trim() === "") mensagensErro.push("Nome");
@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if (email.value.trim() === "") mensagensErro.push("E-mail");
         if (telefone.value.trim() === "") mensagensErro.push("Telefone");
         if (comentario.value.trim() === "") mensagensErro.push("Comentários");
-        if (evidencia.files.length === 0) mensagensErro.push("Evidência");
+        if (curriculo.files.length === 0) mensagensErro.push("Currículo");
 
         return mensagensErro;
     }
@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const telefone = document.getElementById('telefone').value;
 
         if (!validarTelefone(telefone)) {
-            event.preventDefault();  // Impede o envio do formulário
+            event.preventDefault();  
             Swal.fire({
                 title: 'ERRO!',
                 text: 'O número de telefone deve ter pelo menos 10 dígitos.',

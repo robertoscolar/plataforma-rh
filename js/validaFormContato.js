@@ -15,25 +15,21 @@ document.addEventListener('DOMContentLoaded', function () {
     // Função para validar o telefone
     function validarTelefone(telefone) {
         const telefoneLimpo = telefone.replace(/\D/g, '');
-        return telefoneLimpo.length >= 10;
+        resposta = (telefoneLimpo.length == 10 || telefoneLimpo.length == 11);
     }
 
     // Função para validar campos obrigatórios
     function validarCampos() {
         const nome = document.querySelector('[name="nome"]');
-        const sobrenome = document.querySelector('[name="sobrenome"]');
+        const cpf = document.querySelector('[name="cpf"]');
         const email = document.querySelector('[name="email"]');
-        const telefone = document.querySelector('[name="telefone"]');
         const comentario = document.querySelector('[name="comentario"]');
-        const curriculo = document.querySelector('[name="curriculo"]');
         let mensagensErro = [];
 
         if (nome.value.trim() === "") mensagensErro.push("Nome");
-        if (sobrenome.value.trim() === "") mensagensErro.push("Sobrenome");
+        if (cpf.value.trim() === "") mensagensErro.push("CPF");
         if (email.value.trim() === "") mensagensErro.push("E-mail");
-        if (telefone.value.trim() === "") mensagensErro.push("Telefone");
         if (comentario.value.trim() === "") mensagensErro.push("Comentários");
-        if (curriculo.files.length === 0) mensagensErro.push("Currículo");
 
         return mensagensErro;
     }
@@ -62,16 +58,18 @@ document.addEventListener('DOMContentLoaded', function () {
 
         const telefone = document.getElementById('telefone').value;
 
-        if (!validarTelefone(telefone)) {
-            event.preventDefault();  // Impede o envio do formulário
-            Swal.fire({
-                title: 'ERRO!',
-                text: 'O número de telefone deve ter pelo menos 10 dígitos.',
-                icon: 'error',
-                confirmButtonText: 'OK'
-            });
-
-            return;
+        if (telefone.length > 0) {
+            if (!validarTelefone(telefone)) {
+                event.preventDefault();  // Impede o envio do formulário
+                Swal.fire({
+                    title: 'ERRO!',
+                    text: 'O número de telefone deve ter pelo menos 10 dígitos.',
+                    icon: 'error',
+                    confirmButtonText: 'OK'
+                });
+    
+                return;
+            }
         }
     });
 });
