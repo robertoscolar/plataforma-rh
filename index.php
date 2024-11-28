@@ -33,11 +33,11 @@
             </button>
         </div> 
     </section> 
-    <footer class="rodape">
+    <!-- <footer class="rodape">
         <?php
-            include 'components/footer.php';
+            // include 'components/footer.php';
         ?>
-    </footer>
+    </footer> -->
 
 </body>
 

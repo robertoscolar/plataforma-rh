@@ -128,15 +128,15 @@ body {
 
 }
 
-.rodape {
-    /* display: flex; */
+/* .rodape {
+    display: flex;
     background-color: #2D3E4E;
     width: 100%;
     justify-content: left;
     padding-top: 2%;
     font-family: 'Poppins', sans-serif;
 
-}
+} */
 
 .titulo_rodape {
     color: #fff;
@@ -214,7 +214,7 @@ body {
 }
 
 .siganos {
-    width: 10%;
+    width: 20%;
 }
 
 .rede_social_imagem {

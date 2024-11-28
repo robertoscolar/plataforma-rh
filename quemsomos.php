@@ -101,7 +101,9 @@
     </main>
 
     <footer class="rodape">
-        <?php include 'components/footer.php'; ?>
+        <?php 
+        // include 'components/footer.php'; 
+        ?>
     </footer>
 </body>
 
