@@ -40,7 +40,7 @@ if (isset($_FILES['evidencia']) && $_FILES['evidencia']['error'] == UPLOAD_ERR_O
                     icon: 'error',
                     confirmButtonText: 'OK'
                 }).then(function() {
-                    window.location.href = '../../fale_conosco.php';
+                    window.location.href = '../../faleconosco.php';
                 });
             </script>";
 

@@ -18,23 +18,24 @@
 <body>
     <header class="cabecalho">
         <?php
-            include 'components/header.php';
+        include 'components/header.php';
         ?>
     </header>
 
     <section class="conteudo_erro">
         <div class="container_conteudo_erro">
             <h1 class="titulo">OPS! <BR>PÁGINA NÃO ENCONTRADA</h1>
-            <p class="mensagem_erro">A página que você está procurando não foi encontrada. <BR>Mas não se preocupe, nós podemos te ajudar a voltar ao início!</p>
+            <p class="mensagem_erro">A página que você está procurando não foi encontrada. <BR>Mas não se preocupe, nós
+                podemos te ajudar a voltar ao início!</p>
             <button class="botao_1">
                 <a href="home">VOLTAR PARA A PÁGINA INICIAL</a>
             </button>
         </div> <!-- Fechando a div .container_conteudo_erro -->
     </section> <!-- Fechando a section .conteudo_erro -->
-    
+
     <footer class="rodape">
         <?php
-            include 'components/footer.php';
+        include 'components/footer.php';
         ?>
     </footer>
 

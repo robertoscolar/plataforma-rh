@@ -19,7 +19,7 @@
             <a href="cadastro.php" class="home_label">TRABALHE CONOSCO</a>
         </li>
         <li>
-            <a href="fale_conosco.php" class="home_label">FALE CONOSCO</a>
+            <a href="faleconosco.php" class="home_label">FALE CONOSCO</a>
         </li>
     </ul>
 </navbar>

@@ -20,7 +20,7 @@
 <body>
     <header class="cabecalho">
         <?php
-            include 'components/header.php';
+        include 'components/header.php';
         ?>
     </header>
 
@@ -31,11 +31,11 @@
             <button class="botao_1">
                 <a href="quemsomos.php">SAIBA MAIS</a>
             </button>
-        </div> 
-    </section> 
-     <footer class="rodape">
+        </div>
+    </section>
+    <footer class="rodape">
         <?php
-            include 'components/footer.php';
+        include 'components/footer.php';
         ?>
     </footer>
 
