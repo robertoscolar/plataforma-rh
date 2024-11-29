@@ -2,7 +2,13 @@
 
 header("Content-Type: text/html; charset=utf-8");
 
-require_once("../../libs/PHPMailer_5.2.0/class.phpmailer.php");
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+require 'path/to/PHPMailer/src/Exception.php';
+require 'path/to/PHPMailer/src/PHPMailer.php';
+require 'path/to/PHPMailer/src/SMTP.php';
+
 include_once("../connection.php");
 
 echo '<p style="display: none;">pop-up</p>';

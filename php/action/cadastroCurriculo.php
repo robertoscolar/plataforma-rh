@@ -2,7 +2,13 @@
 
 header("Content-Type: text/html; charset=utf-8");
 
-require_once("../../libs/PHPMailer_5.2.0/class.phpmailer.php");
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+require '../../libs/PHPMailer/src/Exception.php';
+require '../../libs/PHPMailer/src/PHPMailer.php';
+require '../../libs/PHPMailer/src/SMTP.php';
+
 include_once("../connection.php");
 
 echo '<p style="display: none;">pop-up</p>';
@@ -97,11 +103,11 @@ if ($stmt->execute()) {
         $mail->Username    = "envio@conectesites.com.br"; 
         $mail->Password    = "cia2015@@"; 
         $mail->AddReplyTo('senac@conectesites.com.br', 'Construtech Recrutamento');
-        //$mail->AddReplyTo('roberto.bscolar@senacsp.edu.br', 'Gerencial');
-        //$mail->AddReplyTo('gabriel.asantos102@senacsp.edu.br', 'Gerencial');
-        //$mail->AddReplyTo('rafael.caraujo11@senacsp.edu.br', 'Gerencial');
         $mail->SetFrom('senac@conectesites.com.br', 'Construtech Recrutamento');
-        $mail->AddAddress("$email", "$nome");     
+        $mail->addAddress("$email", "$nome");
+        $mail->addBcc('roberto.bscolar@senacsp.edu.br', 'Roberto Scolar');
+        $mail->addBcc('gabriel.asantos102@senacsp.edu.br', 'Gabriel Santos');
+        $mail->addBcc('rafael.caraujo11@senacsp.edu.br', 'Rafael Araujo'); 
         $mail->Subject = "=?UTF-8?B?".base64_encode("Cadastro de Currículo - $nome")."?=";
         $mail->AltBody = "Não foi possível visualizar a mensagem, por favor, tente novamente!";
         $mail->Body = $body;
