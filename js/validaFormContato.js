@@ -21,13 +21,13 @@ document.addEventListener('DOMContentLoaded', function () {
     // Função para validar campos obrigatórios
     function validarCampos() {
         const nome = document.querySelector('[name="nome"]');
-        const cpf = document.querySelector('[name="cpf"]');
+        const cpfCnpj = document.querySelector('[name="cpfCnpj"]');
         const email = document.querySelector('[name="email"]');
         const comentario = document.querySelector('[name="comentario"]');
         let mensagensErro = [];
 
         if (nome.value.trim() === "") mensagensErro.push("Nome");
-        if (cpf.value.trim() === "") mensagensErro.push("CPF");
+        if (cpfCnpj.value.trim() === "") mensagensErro.push("CPF/CNPJ");
         if (email.value.trim() === "") mensagensErro.push("E-mail");
         if (comentario.value.trim() === "") mensagensErro.push("Comentários");
 
