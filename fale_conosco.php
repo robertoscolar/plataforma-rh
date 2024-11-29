@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/Faleconosco.css">
     <link rel="stylesheet" href="css/reset.css">
-    <script src="js/validaFormContato.js"></script>
+    <script src="https://unpkg.com/vanilla-masker@1.1.1/build/vanilla-masker.min.js"></script>
+    <script src="js/mascara.js"></script>
+    <script src="js/validacao/validaFormContato.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
@@ -18,8 +20,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-
-
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 
@@ -50,7 +50,7 @@
                                 <input type="text" class="form-control" placeholder="* Nome Completo" aria-label="Nome" name="nome" maxlength="100">
                             </div>
                             <div class="col">
-                                <input type="text" class="form-control" placeholder="* CPF/CNPJ" aria-label="cpfCnpj" maxlength="18" name="cpfCnpj">
+                                <input type="text" class="form-control" placeholder="* CPF/CNPJ" id="cpfCnpj" aria-label="cpfCnpj" maxlength="18" name="cpfCnpj">
                             </div>
                         </div>
 
@@ -59,7 +59,7 @@
                                 <input type="email" class="form-control" placeholder="* E-mail" aria-label="E-mail" maxlength="255" name="email">
                             </div>
                             <div class="col">
-                                <input type="text" class="form-control" onkeypress="mascara(this, telefone)" placeholder="Telefone" aria-label="Telefone" maxlength="15" minlength="14" id="telefone" name="telefone">
+                                <input type="text" class="form-control" id="telefone" placeholder="Telefone" aria-label="Telefone" maxlength="15" minlength="14" id="telefone" name="telefone">
                             </div>
                         </div>
 
