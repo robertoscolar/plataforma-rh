@@ -3,7 +3,7 @@
         <h3 class="titulo_rodape">ACESSOS RÁPIDOS:</h3>
         <p><a href="index.php">HOME</a></p>
         <p><a href="quemsomos.php">QUEM SOMOS</a></p>
-        <p><a href="fale_conosco.php">FALE CONOSCO</a></p>
+        <p><a href="faleconosco.php">FALE CONOSCO</a></p>
         <p><a href="cadastro.php">TRABALHE CONOSCO</a></p>
     </div>
     <div class="contatenos">
