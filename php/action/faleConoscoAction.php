@@ -39,19 +39,8 @@ if (isset($_FILES['evidencia']) && $_FILES['evidencia']['error'] == UPLOAD_ERR_O
     $fileType = $_FILES['evidencia']['type'];
 
     if ($fileType != 'application/pdf') {
-        echo "
-            <script>
-                Swal.fire({
-                    title: 'ERRO!',
-                    text: 'O formato da evidência não é suportado! Por favor, faça o envio em PDF!',
-                    icon: 'error',
-                    confirmButtonText: 'OK'
-                }).then(function() {
-                    window.location.href = '../../faleconosco.php';
-                });
-            </script>";
-
-        return;
+        chamaSweetAlert(false, 'O formato do currículo não é suportado. Por favor, faça o envio em PDF!', 'faleconosco.php');
+        exit;
     }
 
     $fileTmpPath = $_FILES['evidencia']['tmp_name'];
@@ -126,19 +115,15 @@ if ($stmt->execute()) {
         
         $mail->send();
 
-    } catch (phpmailerException $e) {
-        
-        //chamaSweetAlert(false);
-        $e->errorMessage();
     } catch (Exception $e) {
-        //chamaSweetAlert(false);
-        $e->getMessage();
+        chamaSweetAlert(false, 'Erro ao enviar e-mail! Por favor, tente novamente.', 'faleconosco.php');
+        exit;
     }
 
-    chamaSweetAlert(true);
+    chamaSweetAlert(true, 'Formulário processado com sucesso. Cheque sua caixa de e-mail!', 'index.php');
     
 
 } else {
-    chamaSweetAlert(false);
+    chamaSweetAlert(false, 'Erro ao realizar registro em banco de dados. Por favor, tente novamente.', 'faleconosco.php');
 }
 

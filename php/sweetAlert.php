@@ -1,15 +1,15 @@
 <?php
-function chamaSweetAlert($resultadoOperacao) {
+function chamaSweetAlert($resultadoOperacao, $text, $page) {
     if ($resultadoOperacao) {
         echo "
             <script>
                 Swal.fire({
                     title: 'Sucesso!',
-                    text: 'Formulário processado com sucesso. Cheque sua caixa de e-mail!',
+                    text: '$text',
                     icon: 'success',
                     confirmButtonText: 'OK'
                 }).then(function() {
-                    window.location.href = '../../index.php';
+                    window.location.href = '../../$page';
                 });
             </script>";
     
@@ -18,11 +18,11 @@ function chamaSweetAlert($resultadoOperacao) {
             <script>
                 Swal.fire({
                     title: 'ERRO!',
-                    text: 'Erro ao processar formulário. Tente novamente!',
+                    text: '$text',
                     icon: 'error',
                     confirmButtonText: 'OK'
                 }).then(function() {
-                    window.location.href = '../../cadastro.php';
+                    window.location.href = '../../$page';
                 });
             </script>"; 
     }

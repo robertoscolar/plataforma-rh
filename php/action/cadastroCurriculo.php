@@ -28,21 +28,9 @@ $fileType = $_FILES['curriculo']['type'];
 
 //Validação do tipo de arquivo
 if ($fileType != 'application/pdf') {
-    echo "
-        <script>
-            Swal.fire({
-                title: 'ERRO!',
-                text: 'O formato do currículo não é suportado! Por favor, faça o envio em PDF!',
-                icon: 'error',
-                confirmButtonText: 'OK'
-            }).then(function() {
-                window.location.href = '../../cadastro.php';
-            });
-        </script>"; 
-
-    return;
+    chamaSweetAlert(false, 'O formato do currículo não é suportado. Por favor, faça o envio em PDF!', 'cadastro.php');
+    exit;
 }
-
 
 $nome = isset($_POST['nome']) ? $_POST['nome'] : '';
 $cpf = isset($_POST['cpf']) ? $_POST['cpf'] : '';
@@ -114,19 +102,14 @@ if ($stmt->execute()) {
         $mail->Body = $body;
         $mail->addAttachment($fileTmpPath, "$sanitizedFileName");
         $mail->send();
-
-    } catch (phpmailerException $e) {
-
-        //chamaSweetAlert(false);
-        $e->errorMessage();
+        
     } catch (Exception $e) {
-        //chamaSweetAlert(false);
-        $e->getMessage();
+        chamaSweetAlert(false, 'Erro ao enviar e-mail! Por favor, tente novamente.', 'cadastro.php');
+        exit;
     }
 
-    chamaSweetAlert(true);
+    chamaSweetAlert(true, 'Formulário processado com sucesso. Cheque sua caixa de e-mail!', 'index.php');
 
 } else {
-
-    chamaSweetAlert(false);
+    chamaSweetAlert(false, 'Erro ao realizar registro em banco de dados. Por favor, tente novamente.', 'cadastro.php');
 }
