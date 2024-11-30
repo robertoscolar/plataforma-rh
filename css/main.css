@@ -64,10 +64,10 @@ body {
     text-decoration: none;
     color: #ffffff;
     font-weight: 100;
-    padding: 10px 15px;  /* Adiciona um pouco de espaço para o efeito de hover */
-    display: inline-block;  /* Para garantir que o efeito ocupe todo o item */
+    padding: 10px 15px;  
+    display: inline-block;
     border-radius: 8px 8px 8px 8px;
-    transition: background-color 0.3s ease;  /* Suaviza a transição */
+    transition: background-color 0.3s ease; 
 }
 
 .menu_itens li a:hover {
@@ -121,7 +121,7 @@ body {
 }
 
 .rodape p:hover {
-    color: #ff7b00; /* Mudança de cor */
+    color: #ff7b00; 
     transform: translateY(3px);
     transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -209,9 +209,9 @@ body {
     }
 
     img:hover {
-        transform: scale(1.1); /* Aumento suave da imagem */
-        box-shadow: 0px 0px 15px #ff7b00; /* Sombra laranja suave */
-        transition-delay: 0.6s; /* Atraso leve para o início da transição */
+        transform: scale(1.1); 
+        box-shadow: 0px 0px 15px #ff7b00;
+        transition-delay: 0.6s;
         transform: translateY(-3px);
         transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
     }
@@ -234,13 +234,6 @@ body {
     gap: 10px;
 }
 
-/* Para telas menores que 1200px */
-/* @media (max-width: 1199px) {
-    .container_rodape .col-12 {
-        margin-bottom: 10px;
-    }
-} */
-
 
 
 /* COMPONENTES */
@@ -261,9 +254,9 @@ body {
 }
 
 .botao_1:hover {
-    background-color: #000000; /* Mudança de cor */
-    transform: translateX(3px); /* O botão sobe */
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.90); /* Sombra suave ao passar o mouse */
+    background-color: #000000;
+    transform: translateX(3px);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.90); 
 }
 
 button {
@@ -271,8 +264,8 @@ button {
 }
 
 .button:active {
-    transform: translateY(1px); /* Efeito de "pressionamento" */
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1); /* Sombra mais sutil no clique */
+    transform: translateY(1px); 
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1); 
 }
 
 .icon {
@@ -363,6 +356,8 @@ button {
         background-color: #2D3E4E;
     }
 }
+
+/* RODAPÉ RESPONSIVO */
 @media only screen and (max-width: 1199px) {
     .container_rodape {
         display: block;
@@ -370,7 +365,7 @@ button {
     
     .siganos_imgs {
         img {
-            gap: 15%;
+            gap: 20%;
         }
     }
 }
