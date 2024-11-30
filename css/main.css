@@ -112,6 +112,12 @@ body {
 
 /* RODAPE */
 
+.rodape {
+    background: #2D3E4E;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 1%;
+}
+
 .container_rodape {
     display: flex;
     margin: auto;
@@ -125,6 +131,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 .links {
