@@ -14,7 +14,7 @@
         </a>
 
 <a href="mailto:faleconosco@construtech.com.br">
-    <p class="contato_email">E-mail: faleconosco@construtech.com.br</p>
+    <p>E-mail: faleconosco@construtech.com.br</p>
 </a>
 
         <a href="https://www.google.com/maps?q=Av.+Paulista+1337+-+Bela+Vista,+S%C3%A3o+Paulo+-+SP,+01311200" target="_blank">

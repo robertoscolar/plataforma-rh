@@ -136,6 +136,7 @@ body {
     margin: auto;
     justify-content: space-between;
     width: 70%;
+    gap:10%;
 }
 
 .titulo_rodape {
@@ -220,9 +221,10 @@ body {
 .siganos {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
     gap: 20px;
-    width: 15%;
+    width: 20%;
+    margin: auto;
 }
 
 .titulo_cima {
@@ -232,6 +234,12 @@ body {
     gap: 10px;
 }
 
+/* Para telas menores que 1200px */
+/* @media (max-width: 1199px) {
+    .container_rodape .col-12 {
+        margin-bottom: 10px;
+    }
+} */
 
 
 
@@ -355,13 +363,25 @@ button {
         background-color: #2D3E4E;
     }
 }
-
+@media only screen and (max-width: 1199px) {
+    .container_rodape {
+        display: block;
+    }
+    
+    .siganos_imgs {
+        img {
+            gap: 15%;
+        }
+    }
+}
 
 @media only screen and (max-width: 768px) {
 
     .conteudo_principal {
         padding-top: 120px;
     }
+
+    
 
     .titulo {
         font-size: 200%;
