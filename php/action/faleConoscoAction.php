@@ -5,11 +5,12 @@ header("Content-Type: text/html; charset=utf-8");
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-require 'path/to/PHPMailer/src/Exception.php';
-require 'path/to/PHPMailer/src/PHPMailer.php';
-require 'path/to/PHPMailer/src/SMTP.php';
+require '../../libs/PHPMailer/src/Exception.php';
+require '../../libs/PHPMailer/src/PHPMailer.php';
+require '../../libs/PHPMailer/src/SMTP.php';
 
 include_once("../connection.php");
+include_once("../sweetAlert.php");
 
 echo '<p style="display: none;">pop-up</p>';
 echo "<script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>";
@@ -110,11 +111,11 @@ if ($stmt->execute()) {
         $mail->Username = "envio@conectesites.com.br";
         $mail->Password = "cia2015@@";
         $mail->AddReplyTo('senac@conectesites.com.br', 'Construtech Recrutamento');
-        //$mail->AddReplyTo('roberto.bscolar@senacsp.edu.br', 'Gerencial');
-        //$mail->AddReplyTo('gabriel.asantos102@senacsp.edu.br', 'Gerencial');
-        //$mail->AddReplyTo('rafael.caraujo11@senacsp.edu.br', 'Gerencial');
         $mail->SetFrom('senac@conectesites.com.br', 'Construtech Recrutamento');
         $mail->AddAddress("$email", "$nome");
+        $mail->addBcc('roberto.bscolar@senacsp.edu.br', 'Roberto Scolar');
+        $mail->addBcc('gabriel.asantos102@senacsp.edu.br', 'Gabriel Santos');
+        $mail->addBcc('rafael.caraujo11@senacsp.edu.br', 'Rafael Araujo');
         $mail->Subject = "=?UTF-8?B?" . base64_encode("Fale Conosco - $nome") . "?=";
         $mail->AltBody = "Não foi possível visualizar a mensagem, por favor, tente novamente!";
         $mail->Body = $body;
@@ -126,33 +127,18 @@ if ($stmt->execute()) {
         $mail->send();
 
     } catch (phpmailerException $e) {
-        echo $e->errorMessage();
+        
+        //chamaSweetAlert(false);
+        $e->errorMessage();
     } catch (Exception $e) {
-        echo $e->getMessage();
+        //chamaSweetAlert(false);
+        $e->getMessage();
     }
 
-    echo "
-            <script>
-                Swal.fire({
-                    title: 'Sucesso!',
-                    text: 'Formulário processado com sucesso. Cheque sua caixa de e-mail!',
-                    icon: 'success',
-                    confirmButtonText: 'OK'
-                }).then(function() {
-                    window.location.href = '../../index.php';
-                });
-            </script>";
+    chamaSweetAlert(true);
+    
 
 } else {
-    echo "
-        <script>
-            Swal.fire({
-                title: 'ERRO!',
-                text: 'Erro ao processar formulário. Tente novamente!',
-                icon: 'error',
-                confirmButtonText: 'OK'
-            }).then(function() {
-                window.location.href = '../../cadastro.php';
-            });
-        </script>"; 
+    chamaSweetAlert(false);
 }
+

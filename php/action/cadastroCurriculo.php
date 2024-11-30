@@ -10,6 +10,7 @@ require '../../libs/PHPMailer/src/PHPMailer.php';
 require '../../libs/PHPMailer/src/SMTP.php';
 
 include_once("../connection.php");
+include_once("../sweetAlert.php");
 
 echo '<p style="display: none;">pop-up</p>';
 echo "<script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>";
@@ -115,34 +116,17 @@ if ($stmt->execute()) {
         $mail->send();
 
     } catch (phpmailerException $e) {
-        echo $e->errorMessage();
+
+        //chamaSweetAlert(false);
+        $e->errorMessage();
     } catch (Exception $e) {
-        echo $e->getMessage();
+        //chamaSweetAlert(false);
+        $e->getMessage();
     }
 
-    echo "
-        <script>
-            Swal.fire({
-                title: 'Sucesso!',
-                text: 'Cadastro realizado com sucesso. Cheque sua caixa de e-mail!',
-                icon: 'success',
-                confirmButtonText: 'OK'
-            }).then(function() {
-                window.location.href = '../../index.php';
-            });
-        </script>";
+    chamaSweetAlert(true);
 
 } else {
 
-    echo "
-        <script>
-            Swal.fire({
-                title: 'ERRO!',
-                text: 'Erro ao realizar cadastro. Tente novamente!',
-                icon: 'error',
-                confirmButtonText: 'OK'
-            }).then(function() {
-                window.location.href = '../../cadastro.php';
-            });
-        </script>"; 
+    chamaSweetAlert(false);
 }

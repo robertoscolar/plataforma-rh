@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
         if (regras.validaEmail(email) == false) {
-            regras.alertarErro("O E-mail preenchido é inválido.");
+            regras.alertarErro("O e-mail preenchido é inválido.");
             return;
         }
 

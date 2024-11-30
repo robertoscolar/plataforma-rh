@@ -1,14 +1,15 @@
 // Função para validar o telefone - com máscara
 export function validaTelefone(telefone) {    
     const regex = /^\(\d{2}\) \d{4,5}-\d{4}$/;
+
+    if (!regex.test(telefone)) {
+        return false;
+    }
     
     if (telefone.length == 14) {
         return true;
 
     } else if (telefone.length == 15) {
-        return true;
-    
-    } else if (regex.test(telefone)) {
         return true;
     }
         
@@ -25,10 +26,11 @@ export function validaEmail(email) {
 export function validaCpf(cpf) {
     const regex = /^\d{3}\.\d{3}\.\d{3}-\d{2}$/;
 
+    if (!regex.test(cpf)) {
+        return false;
+    }
+
     if (cpf.length == 14) {
-        return true;
-    
-    } else if (regex.test(cpf)) {
         return true;
     }
 
@@ -38,14 +40,15 @@ export function validaCpf(cpf) {
 // Função para validar CNPJ - com máscara
 export function validaCnpj(cnpj) {
     const regex = /^\d{2}\.\d{3}\.\d{3}\/\d{4}-\d{2}$/;
+    
+    if (!regex.test(cnpj)) {
+        return false;
+    }
 
     if (cnpj.length == 18) {
         return true;
+    } 
     
-    } else if (regex.test(cnpj)) {
-        return true;
-    }
-
     return false;
 }
 

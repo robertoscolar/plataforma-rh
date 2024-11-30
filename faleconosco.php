@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <script src="https://unpkg.com/vanilla-masker@1.1.1/build/vanilla-masker.min.js"></script>
     <script src="js/mascara.js"></script>
-    <script src="js/validacao/validaFormContato.js"></script>
+    <script type="module" src="js/validacao/validaFormContato.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
@@ -65,7 +65,7 @@
                                 </div>
                                 <div class="col">
                                     <input type="text" class="form-control" id="telefone" placeholder="Telefone"
-                                        aria-label="Telefone" maxlength="15" minlength="14" id="telefone"
+                                        aria-label="Telefone" maxlength="15" minlength="14"
                                         name="telefone">
                                 </div>
                             </div>
