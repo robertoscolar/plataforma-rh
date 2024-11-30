@@ -199,7 +199,7 @@ body {
     display: flex;
     justify-content: center;
     padding: 5px 0;
-    gap: 50%;
+    gap: 20%;
 
     img {
         border-radius: 50%;
