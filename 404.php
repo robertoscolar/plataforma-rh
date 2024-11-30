@@ -5,6 +5,7 @@
     <title>404 - Página Não Encontrada</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/404.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
@@ -22,7 +23,7 @@
         ?>
     </header>
 
-    <section class="conteudo_erro">
+    <!-- <section class="conteudo_erro">
         <div class="container_conteudo_erro">
             <h1 class="titulo">OPS! <BR>PÁGINA NÃO ENCONTRADA</h1>
             <p class="mensagem_erro">A página que você está procurando não foi encontrada. <BR>Mas não se preocupe, nós
@@ -30,14 +31,27 @@
             <button class="botao_1">
                 <a href="home">VOLTAR PARA A PÁGINA INICIAL</a>
             </button>
-        </div> <!-- Fechando a div .container_conteudo_erro -->
-    </section> <!-- Fechando a section .conteudo_erro -->
+        </div>
+</section> -->
 
-    <footer class="rodape">
+
+    <section class="conteudo_principal">
+        <div class="container_conteudo_erro">
+            <h1 class="titulo">OPS! <BR>PÁGINA NÃO ENCONTRADA</h1>
+            <p class="mensagem_erro">A página que você está procurando não foi encontrada. <BR>Mas não se preocupe, nós
+            podemos te ajudar a voltar ao início!</p>
+            <button class="botao_1">
+                <a href="index.php">SAIBA MAIS</a>
+            </button>
+        </div>
+    </section>
+
+
+    <!-- <footer class="rodape">
         <?php
-        include 'components/footer.php';
+        // include 'components/footer.php';
         ?>
-    </footer>
+    </footer> -->
 
 </body>
 
