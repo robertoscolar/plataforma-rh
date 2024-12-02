@@ -115,7 +115,8 @@ body {
 .rodape {
     background: #2D3E4E;
     font-family: 'Poppins', sans-serif;
-    padding-top: 1%;
+    /* padding-top: 2%; */
+    width: 100vw;
     /* transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; */
     /* text-decoration: none; */
 }
@@ -132,11 +133,9 @@ body {
 
 
 .container_rodape {
-    display: flex;
-    margin: auto;
-    justify-content: space-between;
-    width: 70%;
-    gap:10%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 1%;
 }
 
 .titulo_rodape {
@@ -222,8 +221,8 @@ body {
     display: flex;
     flex-direction: column;
     /* align-items: center; */
-    gap: 20px;
-    width: 20%;
+    /* gap: 20px; */
+    width: 50%;
     margin: auto;
 }
 
