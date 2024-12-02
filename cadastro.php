@@ -34,8 +34,8 @@
         <div class="form_explicativo">
             <div class="conteiner_explicativo">
                 <!-- <h1>Dê o primeiro passo para sua próxima grande oportunidade!</h1> -->
-                <p class="img_cadastro">Estamos sempre em busca de pessoas talentosas e apaixonadas pelo que fazem. Se
-                    você quer crescer, aprender e contribuir com sua experiência, essa é a sua chance. Preencha seu
+                <p class="img_cadastro">Estamos sempre em busca de pessoas talentosas e apaixonadas pelo que fazem.<BR> Se
+                    você quer crescer, aprender e contribuir com sua experiência, essa é a sua chance.<BR> Preencha seu
                     currículo e mostre como você pode fazer a diferença aqui!</p>
                 <div class="img"></div>
             </div>
