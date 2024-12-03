@@ -2,3 +2,4 @@
 .htaccess
 /components/.header.php
 phpmyadmin
+.env
