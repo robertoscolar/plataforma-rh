@@ -366,9 +366,27 @@
     }
 
     .depoimentos_images {
+        width: 100%;
         margin: auto;
-        gap: 0;
-        flex-wrap: wrap;
+        gap: 30px;
+        display: grid;
+        justify-items: center;
+    }
+
+    .depoimentos_cliente {
+        width: 100%;
+    }
+
+    .depoimentos_cliente01 {
+        grid-area: 'cliente01';
+    }
+
+    .depoimentos_cliente02 {
+        grid-area: 'cliente02';
+    }
+
+    .depoimentos_cliente03 {
+        grid-area: 'cliente03';
     }
 
     .depoimentos_cliente01, .depoimentos_cliente02, .depoimentos_cliente03 {

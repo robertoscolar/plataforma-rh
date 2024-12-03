@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/Faleconosco.css">
+    <link rel="stylesheet" href="css/faleconosco.css">
     <link rel="stylesheet" href="css/reset.css">
     <script src="https://unpkg.com/vanilla-masker@1.1.1/build/vanilla-masker.min.js"></script>
     <script src="js/mascara.js"></script>
