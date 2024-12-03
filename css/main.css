@@ -91,7 +91,7 @@ body {
 
 .container_conteudo_principal {
     margin: auto;
-    width: 100vh;
+    margin-left: 10%;
 }
 
 .subtitulo {
@@ -116,7 +116,7 @@ body {
     background: #2D3E4E;
     font-family: 'Poppins', sans-serif;
     /* padding-top: 2%; */
-    width: 100vw;
+    /* width: 100vw; */
     /* transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; */
     /* text-decoration: none; */
 }
@@ -365,6 +365,10 @@ button {
 @media only screen and (max-width: 1199px) {
     .container_rodape {
         display: block;
+    }
+
+    .contatenos {
+        margin-top: 1rem;
     }
     
     .siganos_imgs {
