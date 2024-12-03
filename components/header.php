@@ -4,7 +4,7 @@
 <navbar class="menu">
     <ul class="menu_itens" id="menu_itens">
         <a class="fechar_menu" href="javascript:void(0);" onclick="showMenuItems()">
-            <i> -> </i>
+            <i> <img src = "./images/x.png" alt="X"/> </i>
         </a>
         <li>
             <a href="index.php" class="home_label">HOME</a>

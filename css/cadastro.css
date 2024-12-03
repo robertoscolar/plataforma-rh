@@ -180,6 +180,14 @@
         margin-right: 0;
     }
 
+    .conteudo_principal h1 {
+        text-align: center !important;
+    }
+
+    .conteiner_explicativo {
+        width: 100% !important;
+    }
+
     /* Botões lado a lado */
     .botao-container {
         flex-direction: row; /* Garante que os botões fiquem lado a lado */
