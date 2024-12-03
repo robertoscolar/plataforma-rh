@@ -11,6 +11,7 @@ require '../../libs/PHPMailer/src/SMTP.php';
 
 include_once("../connection.php");
 include_once("../sweetAlert.php");
+include_once("../utils.php");
 
 echo '<p style="display: none;">pop-up</p>';
 echo "<script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>";
@@ -43,6 +44,15 @@ $fileData = base64_encode(file_get_contents($fileTmpPath));
 
 $datetime = new DateTime(null, new DateTimeZone('America/Sao_Paulo'));
 $formattedDatetime = $datetime->format('Y-m-d H:i:s');
+
+$resultadoCount = validaRequisicao($conn, "cadastro", 
+        "cpf", $cpf, 
+        "email", $email);
+
+if ($resultadoCount > 0) {
+    chamaSweetAlert(false, "O E-mail e CPF já estão cadastrados no banco de dados!", "index.php");
+    exit;
+}
 
 $stmt = $conn->prepare("
     INSERT INTO cadastro (  nomeCompleto, 
