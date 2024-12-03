@@ -44,7 +44,9 @@
     max-width: 1398px;
     height: auto;
     text-align: center;
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 140px;
     margin: auto;
 }
 
@@ -286,3 +288,93 @@
     text-align: center;
     width: auto;
 }
+
+@media (max-width: 768px) {
+    .introducao {
+      flex-direction: column-reverse;
+      padding: 0 10px;
+    }
+   
+    .introducao_imagem {
+            width: 100%;
+            height: auto; /* Altura ajustada automaticamente */
+            padding-top: 56.25%; /* Mantém proporção 16:9, ajuste conforme necessário */
+            margin-bottom: 20px;
+            border-radius: 20px;
+            background: url(../images/quemsomos/construcao.jpg) center/cover no-repeat !important;
+        }
+    }
+    
+  
+    .introducao p {
+      font-size: 18px;
+      margin-left: 0;
+      text-align: center;
+    }
+  
+    .oque_fazemos {
+      /* flex-direction: column; */
+      padding: 0 10px;
+    }
+  
+    .oque_fazemos_img {
+      width: 100%;
+      height: 100%;
+      margin-bottom: 20px;
+      border-radius: 40px;
+    }
+  
+    .oque_fazemos p {
+      font-size: 18px;
+      margin-left: 0;
+    }
+  
+  
+  @media (max-width: 400px) {
+    .introducao {
+      flex-direction: column-reverse;
+    }
+  
+    .introducao_imagem {
+      width: 100%;
+      height: auto;
+    }
+  
+    .introducao p {
+      font-size: 16px;
+      margin: 10px 0;
+      text-align: center;
+    }
+  
+    .oque_fazemos {
+      flex-direction: column;
+      padding: 0 5px;
+    }
+  
+    .oque_fazemos_img {
+      width: 100%;
+      height: auto;
+      border-radius: 20px;
+    }
+  
+    .oque_fazemos p {
+      font-size: 16px;
+      margin-left: 0;
+    }
+  
+    .depoimentos_images {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .depoimentos_cliente {
+      width: 100%;
+    }
+  
+    .contato button {
+      font-size: 20px;
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+  
