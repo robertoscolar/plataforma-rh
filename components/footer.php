@@ -10,7 +10,7 @@
     <h3 class="titulo_rodape">FALE DIRETO CONOSCO:</h3>
 
         <div class="links_margin">
-        <a href="https://web.whatsapp.com/send/?phone=551129870000&text&type=phone_number&app_absent=0" target="_blank">
+        <a href="https://api.whatsapp.com/send?phone=11915189377&text=Olá!" target="_blank">
             <p>Tel: (11) 2987-0000 / 2876-9878</p>
         </a>
 
