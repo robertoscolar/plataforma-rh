@@ -45,6 +45,19 @@
     flex: 1;
 }
 
+.container_mapa_menu-aberto { 
+    width: 100%;
+    margin: auto;
+    margin-left: 5%; /* Ajustado para maior flexibilidade */
+    margin-right: 5%;
+    border-radius: 8px;
+    padding: 1%;
+    background-color: transparent;
+    color: #fff;
+    flex: 1;
+    z-index: -1;
+}
+
 /* Legendas */
 .legenda_principal {
     font-weight: 500;

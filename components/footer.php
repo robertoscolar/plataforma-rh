@@ -29,7 +29,7 @@
         <div class="siganos_imgs">
         <div>
             <a href="https://www.facebook.com/construtech_recrutamento/?locale=pt_BR" target="_blank">
-            <img src="images/images/social/images.png" alt="Facebook">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
             </a>
         </div>
 
@@ -41,7 +41,7 @@
   
         <div>
             <a href="https://www.instagram.com/construtech_recrutamento/" target="_blank">
-                <img src="images/images/social/Instagram.png" alt="Instagram">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" alt="Instagram">
             </a>
         </div>
 

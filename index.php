@@ -31,6 +31,11 @@
             <button class="botao_1">
                 <a href="quemsomos.php">SAIBA MAIS</a>
             </button>
+    <!-- <a href="https://api.whatsapp.com/send?phone=SEU_NUMERO&text=Olá!" 
+   class="whatsapp-float" 
+   target="_blank">
+   <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="whatsapp-icon">
+</a> -->
         </div>
     </section>
     <footer class="rodape">

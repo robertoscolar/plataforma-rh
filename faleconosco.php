@@ -85,7 +85,7 @@
                     </div>
 
                     <!-- Mapa -->
-                    <div class="container_mapa">
+                    <div class="container_mapa" id="container_mapa">
                         <div id="map"></div>
                     </div>
                 </div>
