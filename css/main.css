@@ -144,7 +144,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
 .links {
@@ -222,8 +221,8 @@ body {
     flex-direction: column;
     /* align-items: center; */
     /* gap: 20px; */
-    width: 50%;
-    margin: auto;
+    /* width: 50%; */
+    /* margin: auto; */
 }
 
 .links_margin {
