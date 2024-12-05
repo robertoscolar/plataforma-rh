@@ -22,19 +22,6 @@
         include 'components/header.php';
         ?>
     </header>
-
-    <!-- <section class="conteudo_erro">
-        <div class="container_conteudo_erro">
-            <h1 class="titulo">OPS! <BR>PÁGINA NÃO ENCONTRADA</h1>
-            <p class="mensagem_erro">A página que você está procurando não foi encontrada. <BR>Mas não se preocupe, nós
-                podemos te ajudar a voltar ao início!</p>
-            <button class="botao_1">
-                <a href="home">VOLTAR PARA A PÁGINA INICIAL</a>
-            </button>
-        </div>
-</section> -->
-
-
     <section class="conteudo_principal">
         <div class="container_conteudo_erro">
             <h1 class="titulo">OPS! <BR>PÁGINA NÃO ENCONTRADA</h1>
