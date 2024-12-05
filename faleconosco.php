@@ -53,7 +53,7 @@
                                         aria-label="Nome" name="nome" maxlength="100">
                                 </div>
                                 <div class="col">
-                                    <input type="text" class="form-control" placeholder="* CPF/CNPJ" id="cpfCnpj"
+                                    <input type="text" class="form-control" placeholder="CPF/CNPJ" id="cpfCnpj"
                                         aria-label="cpfCnpj" maxlength="18" name="cpfCnpj">
                                 </div>
                             </div>
@@ -64,7 +64,7 @@
                                         aria-label="E-mail" maxlength="255" name="email">
                                 </div>
                                 <div class="col">
-                                    <input type="text" class="form-control" id="telefone" placeholder="Telefone"
+                                    <input type="text" class="form-control" id="telefone" placeholder="* Telefone"
                                         aria-label="Telefone" maxlength="15" minlength="14"
                                         name="telefone">
                                 </div>

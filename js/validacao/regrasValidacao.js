@@ -78,13 +78,13 @@ export function validaCamposObrigatoriosContato() {
     var mensagemErro = [];
 
     const nome = document.querySelector('[name="nome"]');
-    const cpfCnpj = document.querySelector('[name="cpfCnpj"]');
     const email = document.querySelector('[name="email"]');
+    const telefone = document.querySelector('[name="telefone"]');
     const comentario = document.querySelector('[name="comentario"]');
         
     if (nome.value.trim() === "") mensagemErro.push("Nome");
-    if (cpfCnpj.value.trim() === "") mensagemErro.push("CPF/CNPJ");
     if (email.value.trim() === "") mensagemErro.push("E-mail");
+    if (telefone.value.trim() === "") mensagemErro.push("Telefone");
     if (comentario.value.trim() === "") mensagemErro.push("Comentários");
 
     return mensagemErro;
