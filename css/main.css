@@ -226,7 +226,7 @@ body {
     
 }
 
-/* .whatsapp-float {
+.whatsapp-float {
     position: fixed;
     width: 60px;
     height: 60px;
@@ -245,7 +245,7 @@ body {
     width: 100%;
     height: 100%;
     border-radius: 50%;
-} */
+}
 
 
 .siganos {
@@ -410,8 +410,9 @@ button {
     }
 
     
-
     .titulo {
         font-size: 200%;
     }
+
+    
 }
