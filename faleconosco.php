@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/Faleconosco.css">
+    <link rel="stylesheet" href="css/faleconosco.css">
     <link rel="stylesheet" href="css/reset.css">
     <script src="https://unpkg.com/vanilla-masker@1.1.1/build/vanilla-masker.min.js"></script>
     <script src="js/mascara.js"></script>
@@ -53,7 +53,7 @@
                                         aria-label="Nome" name="nome" maxlength="100">
                                 </div>
                                 <div class="col">
-                                    <input type="text" class="form-control" placeholder="* CPF/CNPJ" id="cpfCnpj"
+                                    <input type="text" class="form-control" placeholder="CPF/CNPJ" id="cpfCnpj"
                                         aria-label="cpfCnpj" maxlength="18" name="cpfCnpj">
                                 </div>
                             </div>
@@ -64,7 +64,7 @@
                                         aria-label="E-mail" maxlength="255" name="email">
                                 </div>
                                 <div class="col">
-                                    <input type="text" class="form-control" id="telefone" placeholder="Telefone"
+                                    <input type="text" class="form-control" id="telefone" placeholder="* Telefone"
                                         aria-label="Telefone" maxlength="15" minlength="14"
                                         name="telefone">
                                 </div>
@@ -85,7 +85,7 @@
                     </div>
 
                     <!-- Mapa -->
-                    <div class="container_mapa">
+                    <div class="container_mapa" id="container_mapa">
                         <div id="map"></div>
                     </div>
                 </div>

@@ -4,22 +4,22 @@
 <navbar class="menu">
     <ul class="menu_itens" id="menu_itens">
         <a class="fechar_menu" href="javascript:void(0);" onclick="showMenuItems()">
-            <i> -> </i>
+            <i> <img src = "./images/x.png" alt="X"/> </i>
         </a>
         <li>
-            <a href="index.php" class="home_label">HOME</a>
+            <a href="index.php">HOME</a>
         </li>
         <li>
-            <a href="quemsomos.php" class="home_label">QUEM SOMOS</a>
+            <a href="quemsomos.php">QUEM SOMOS</a>
         </li>
         <!-- <li>
             <a href="nossas_solucoes.php" class="home_label">NOSSAS SOLUÇÕES</a>
         </li> -->
         <li>
-            <a href="cadastro.php" class="home_label">TRABALHE CONOSCO</a>
+            <a href="cadastro.php">TRABALHE CONOSCO</a>
         </li>
         <li>
-            <a href="faleconosco.php" class="home_label">FALE CONOSCO</a>
+            <a href="faleconosco.php">FALE CONOSCO</a>
         </li>
     </ul>
 </navbar>

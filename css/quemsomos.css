@@ -20,7 +20,6 @@
     font-size: 20px;
     color: #000000;  
     margin-top: 10px;
-    margin-left: 120px;
     text-align: center;
 }
 
@@ -40,23 +39,25 @@
 .introducao {
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 90%;
     max-width: 1398px;
     height: auto;
     text-align: center;
-    display: flex;
+    display: grid;
+    grid-template-columns: 50% 50%;
     margin: auto;
 }
 
 .introducao_imagem {
-    width: 549.06px;                      
-    height: 368.61px;                      
+    width: 90%;                      
+    height: 90%;                      
     background: url(../images/quemsomos/construcao.jpg);
     background-size: cover;           
     background-position: center;    
     background-repeat: no-repeat;    
     border-radius: 40px;
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+    margin: auto;
 }
 
 .cor-preta {
@@ -70,17 +71,18 @@
 .oque_fazemos {
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 90%;
     max-width: 1398px;
     height: 445px;
     text-align: start;
-    display: flex;
+    display: grid;
+    grid-template-columns: 50% 50%;
     margin: auto;
 }
 
 .oque_fazemos_img {
-    width: 909.06px;
-    height: 368.61px;
+    width: 90%;
+    height: 90%;
     background: url(../images/quemsomos/ENTREVISTA.png);
     background-size: cover;
     background-position: center;
@@ -88,121 +90,34 @@
     border-radius: 90px;
     margin-left: 0;
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+    margin: auto;
 }
-
-/* Media Queries para tornar o design responsivo */
-@media (max-width: 1024px) {
-    /* Ajustes para dispositivos médios como tablets */
-    .introducao {
-        flex-direction: column; /* Empilha o conteúdo verticalmente */
-        padding: 20px;
-    }
-
-    .introducao p {
-        font-size: 18px; /* Reduz o tamanho da fonte */
-        margin-left: 0; /* Centraliza o texto */
-        text-align: center;
-    }
-
-    .introducao_imagem {
-        width: 80%; /* Ocupa 80% da largura do container */
-        height: auto; /* Mantém a proporção */
-    }
-
-    .conteudo_principal h1 span {
-        font-size: 24px; /* Reduz o tamanho da fonte */
-    }
-
-    .oque_fazemos {
-        flex-direction: column; /* Empilha o conteúdo verticalmente */
-        height: auto; /* Ajusta a altura */
-    }
-
-    .oque_fazemos_img {
-        width: 100%; /* Ajusta a largura da imagem */
-        max-width: 600px; /* Limita a largura máxima */
-        height: auto; /* Ajusta a altura */
-    }
-}
-
-@media (max-width: 768px) {
-    /* Ajustes para dispositivos móveis */
-    .introducao p {
-        font-size: 16px; /* Reduz o tamanho da fonte */
-    }
-
-    .introducao_imagem {
-        width: 100%; /* Ocupa 100% da largura */
-        height: auto; /* Ajusta a altura */
-        border-radius: 20px; /* Reduz o raio de borda */
-    }
-
-    .conteudo_principal h1 span {
-        font-size: 20px; /* Ajusta o tamanho da fonte */
-        padding: 8px 12px; /* Ajusta o espaçamento interno */
-    }
-
-    .oque_fazemos {
-        padding: 10px;
-    }
-
-    .oque_fazemos_img {
-        width: 100%;
-        max-width: 400px;
-        height: auto;
-    }
-}
-
-@media (max-width: 480px) {
-    /* Ajustes para smartphones */
-    .introducao {
-        padding: 10px;
-    }
-
-    .introducao p {
-        font-size: 14px;
-    }
-
-    .introducao_imagem {
-        width: 100%;
-        height: auto;
-        border-radius: 15px;
-    }
-
-    .oque_fazemos {
-        text-align: center; /* Centraliza o texto */
-    }
-
-    .oque_fazemos_img {
-        width: 100%;
-        max-width: 300px;
-    }
-}
-
 
 .oque_fazemos p {
     font-family: 'Kiwi Maru', serif;
     font-size: 20px;
     color: #000000;
+    margin-top: 10px;
+    margin-left: 0; 
     text-align: start;
-    max-width: 80%;
-    margin: 40px auto 0;
+    width: 95%; 
     display: flex;
+    margin-top: 40px;
 }
 
-/* Responsivo */
-@media (max-width: 1024px) {
-    .oque_fazemos p {
-        font-size: 18px;
-        max-width: 100%;
-        text-align: center;
-    }
+.oque_fazemos h1 {
+    width: 100%;
+}
+
+.oque_p {
+    text-align: center;
 }
 
 .oque_fazemos h1 span {
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     padding: 10px 20px;
+    margin: 0;
     text-align: center;
     width: auto;
 }
@@ -212,24 +127,20 @@
 }
 
 .diferentes {
-    width: 100%;
+    width: 90%;
     max-width: 1398px;
+    height: auto;
+    text-align: start;
+    margin: auto;
+    gap: 20px; 
     text-align: center;
-    margin: 0 auto;
-    gap: 20px;
 }
 
-/* Responsivo */
-@media (max-width: 768px) {
-    .diferentes {
-        padding: 10px;
-    }
-}
-
-.diferentes h1, .diferentes span {
+.diferentes h1, span {
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     padding: 10px 20px;
+    margin: 10px;
     text-align: center;
     width: auto;
 }
@@ -238,52 +149,37 @@
     font-family: 'Kiwi Maru', serif;
     font-size: 20px;
     color: #000000;
+    margin-top: 10px;
+    margin-left: 0; 
     text-align: start;
-    max-width: 100%;
-}
-
-/* Responsivo */
-@media (max-width: 768px) {
-    .texto_padrao {
-        font-size: 18px;
-    }
+    max-width: 100%; 
 }
 
 .diferente_text_center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    gap: 20px;
-    width: 100%;
-    max-width: 1200px;
-    margin: 20px auto;
+    display: flex;              
+    text-align: center;        
+    gap: 20px;                  
+    margin: 0 auto;             
+    width: 100%;                
+    max-width: 1200px;          
+    margin: 20px; 
 }
 
 .diferente_text_center p {
     font-family: 'Kiwi Maru', serif;
-    color: #000000;
-    font-size: 20px;
-    margin: 20px;
-    flex: 1;
-    word-wrap: break-word;
-}
-
-/* Responsivo */
-@media (max-width: 768px) {
-    .diferente_text_center {
-        flex-direction: column;
-    }
-
-    .diferente_text_center p {
-        font-size: 16px;
-    }
+    color: #000000;  
+    font-size: 20px;          
+    margin: 20px;                
+    flex: 1;                  
+    word-wrap: break-word;  
+    font-size: 110%; 
 }
 
 .depoimentos {
     justify-content: center;
-    width: 100%;
+    width: 90%;
     max-width: 1398px;
+    height: auto;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -291,10 +187,11 @@
     gap: 30px;
 }
 
-.depoimentos h1, .depoimentos span {
+.depoimentos h1, span {
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     padding: 10px 20px;
+    margin: 0;
     text-align: center;
     width: auto;
 }
@@ -306,13 +203,6 @@
     flex-wrap: wrap;
 }
 
-/* Responsivo */
-@media (max-width: 768px) {
-    .depoimentos_images {
-        justify-content: center;
-    }
-}
-
 .depoimentos_cliente {
     text-align: center;
     width: 30%;
@@ -322,13 +212,11 @@
     gap: 10px;
 }
 
-/* Responsivo */
-@media (max-width: 768px) {
-    .depoimentos_cliente {
-        width: 100%;
-        max-width: 300px;
-    }
+* image {
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
 }
+
+
 
 .depoimentos_cliente01, .depoimentos_cliente02, .depoimentos_cliente03 {
     width: 200px;
@@ -340,61 +228,181 @@
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
 }
 
+.depoimentos_cliente01 {
+    background-image: url(../images/quemsomos/Cliente_01.jpeg);
+}
+
+.depoimentos_cliente02 {
+    background-image: url(../images/quemsomos/Cliente_02.jpeg);
+}
+
+.depoimentos_cliente03 {
+    background-image: url(../images/quemsomos/Cliente_03.jpeg);
+}
+
+
 .depoimentos_cliente p {
-    font-family: 'Open Sans', Helvetica, sans-serif;
+    font-family:'Open Sans', Helvetica, sans-serif;
     font-style: italic;
+    margin: 5px 0;
+    padding: 0;
     font-size: 14px;
     color: #333;
-    margin: 5px 0;
 }
 
 .contato {
     justify-content: center;
-    width: 100%;
+    width: 90%;
+    height: auto;
     text-align: start;
     display: flex;
     margin-top: 90px;
 }
 
-/* Responsivo */
-@media (max-width: 768px) {
-    .contato {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .contato button {
-        width: 100%;
-        max-width: 300px;
-    }
-}
-
 .contato button:hover {
-    background-color: #000;
-    transform: translateX(3px);
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.90);
+    background-color: #000; /* Mudança de cor */
+    transform: translateX(3px); /* O botão sobe */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.90); /* Sombra suave ao passar o mouse */
 }
 
 .contato button:active {
-    transform: translateY(1px);
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    transform: translateY(1px); /* Efeito de "pressionamento" */
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1); /* Sombra mais sutil no clique */
 }
+
+
 
 .contato button {
     border-radius: 10px;
     font-family: 'Poppins', sans-serif;
     font-size: 32px;
     color: white;
-    margin: 10px auto;
+    margin-left: 10px; 
+    max-width: 80%; 
     background: #FF7420;
+    z-index: 10px !important;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.contatos h1, .contatos span {
+.contatos h1, span {
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     padding: 10px 20px;
+    margin: 0;
     text-align: center;
     width: auto;
+}
+
+@media (max-width: 768px) {
+    .conteudo_principal {
+        padding-top: 120px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .conteudo_principal {
+        padding-top: 120px !important;
+    }
+
+    .introducao {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+        height: 100%;
+    }
+
+    .introducao p {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .introducao_imagem {
+        width: 90%;
+        height: 368.61px;
+    }
+
+    .oque_fazemos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .oque_fazemos h1 {
+        margin-top: 5%;
+        text-align: center;
+    }
+
+    .oque_fazemos h1 span {
+        margin: 0 !important;
+    }
+
+    .oque_p {
+        text-align: center !important;
+        margin: auto !important;
+        max-width: 90% !important;
+        margin-top: 10px !important;
+        margin-bottom: 1.5rem !important;
+    }
+
+    .oque_fazemos_img {
+        width: 90%;
+        height: 368.61px;   
+    }
+
+    .diferentes {
+        margin: auto;
+    }
+
+    .diferentes_conteudo h1 span {
+        padding: 0 !important;
+    }
+
+    .diferente_text_center {
+        width: 90%;
+        display: inline-block;
+    }
+
+    .depoimentos_images {
+        width: 100%;
+        margin: auto;
+        gap: 30px;
+        display: grid;
+        justify-items: center;
+    }
+
+    .depoimentos_cliente {
+        width: 100%;
+    }
+
+    .depoimentos_cliente01 {
+        grid-area: 'cliente01';
+    }
+
+    .depoimentos_cliente02 {
+        grid-area: 'cliente02';
+    }
+
+    .depoimentos_cliente03 {
+        grid-area: 'cliente03';
+    }
+
+    .depoimentos_cliente01, .depoimentos_cliente02, .depoimentos_cliente03 {
+        width: 10vh;
+        height: 10vh;
+    }
+
+    .contato {
+        display: block;
+        padding-top: 1.5rem;
+        margin: auto;
+        text-align: center;
+    }
+
+    .contato h1 span {
+        text-align: center;
+        margin: auto !important;
+    }
 }

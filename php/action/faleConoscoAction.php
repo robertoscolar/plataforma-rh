@@ -11,6 +11,7 @@ require '../../libs/PHPMailer/src/SMTP.php';
 
 include_once("../connection.php");
 include_once("../sweetAlert.php");
+include_once("../utils.php");
 
 echo '<p style="display: none;">pop-up</p>';
 echo "<script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>";
@@ -32,6 +33,15 @@ $comentario = isset($_POST['comentario']) ? $_POST['comentario'] : '';
 
 $datetime = new DateTime(null, new DateTimeZone('America/Sao_Paulo'));
 $formattedDatetime = $datetime->format('Y-m-d H:i:s');
+
+$resultadoCount = validaRequisicao($conn, "contato", 
+        "cpfCnpj", $cpfCnpj, 
+        "email", $email);
+
+if ($resultadoCount > 0) {
+    chamaSweetAlert(false, "O E-mail e CPF/CNPJ já estão cadastrados no banco de dados!", "index.php");
+    exit;
+}
 
 $arquivoEnviado = true;
 

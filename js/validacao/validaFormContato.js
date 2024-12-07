@@ -13,9 +13,11 @@ document.addEventListener('DOMContentLoaded', function () {
             return;
         }
 
-        if (regras.validaCpf(cpfCnpj) == false && regras.validaCnpj(cpfCnpj) == false) {
-            regras.alertarErro("O CPF/CNPJ deve conter 11 ou 14 dígitos.");
-            return;
+        if (cpfCnpj != null && cpfCnpj.length > 0) {
+            if (regras.validaCpf(cpfCnpj) == false && regras.validaCnpj(cpfCnpj) == false) {
+                regras.alertarErro("O CPF/CNPJ deve conter 11 ou 14 dígitos.");
+                return;
+            }
         }
 
         if (regras.validaEmail(email) == false) {
@@ -23,11 +25,9 @@ document.addEventListener('DOMContentLoaded', function () {
             return;
         }
 
-        if (telefone != null && telefone.length > 0) {
-            if (regras.validaTelefone(telefone) == false) {
-                regras.alertarErro("O número de telefone deve conter de 10 a 11 dígitos.");
-                return;
-            }
+        if (regras.validaTelefone(telefone) == false) {
+            regras.alertarErro("O número de telefone deve conter de 10 a 11 dígitos.");
+            return;
         }
     });
 });

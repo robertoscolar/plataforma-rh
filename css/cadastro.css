@@ -24,12 +24,14 @@
     margin: auto;
     margin-left: 25%; /* Ajustado para maior flexibilidade */
     margin-right: 5%;
+    margin-top: 5%;
     border-radius: 8px;
     padding: 1%;
     background-color: #3f3e3e63;
     color: #fff;
     box-shadow: 0px 4px 15px rgba(4, 4, 4, 4.3), 0px 0px 10px rgba(2, 2, 2, 2.3);
     flex: 1;
+    font-family: 'Kiwi Maru', serif;
 }
 
 /* Mapa */
@@ -177,6 +179,14 @@
         width: 100%; /* Contêiner ocupa toda a largura da tela */
         margin-left: 0;
         margin-right: 0;
+    }
+
+    .conteudo_principal h1 {
+        text-align: center !important;
+    }
+
+    .conteiner_explicativo {
+        width: 100% !important;
     }
 
     /* Botões lado a lado */

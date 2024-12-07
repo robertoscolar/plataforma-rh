@@ -28,6 +28,16 @@ body {
 .logo {
     width: 90%;
     height: 100%;
+    margin-top: 10%;
+    margin-left: 10%;
+    
+}
+
+.logo:hover {
+    /* border: 1px solid #ff0000; */
+    color: rgb(0, 0, 0); 
+    /* transform: translateY(1px);  */
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1); 
 }
 
 .menu {
@@ -82,7 +92,7 @@ body {
     background-image: url('../images/images/background/body_backgroud.png');
     width: 100%;
     z-index: 10;
-    padding-bottom: 60px;
+    padding-bottom: 160px;
     margin-top: -90px;
     padding-top: 200px;
     background-repeat: no-repeat;
@@ -91,7 +101,7 @@ body {
 
 .container_conteudo_principal {
     margin: auto;
-    width: 100vh;
+    margin-left: 10%;
 }
 
 .subtitulo {
@@ -115,7 +125,8 @@ body {
 .rodape {
     background: #2D3E4E;
     font-family: 'Poppins', sans-serif;
-    padding-top: 1%;
+    /* padding-top: 2%; */
+    /* width: 100vw; */
     /* transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; */
     /* text-decoration: none; */
 }
@@ -132,11 +143,9 @@ body {
 
 
 .container_rodape {
-    display: flex;
-    margin: auto;
-    justify-content: space-between;
-    width: 70%;
-    gap:10%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 1%;
 }
 
 .titulo_rodape {
@@ -145,7 +154,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
 .links {
@@ -218,13 +226,40 @@ body {
     
 }
 
+/* .whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+.whatsapp-icon {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+} */
+
+
 .siganos {
     display: flex;
     flex-direction: column;
     /* align-items: center; */
-    gap: 20px;
-    width: 20%;
-    margin: auto;
+    /* gap: 20px; */
+    /* width: 50%; */
+    /* margin: auto; */
+}
+
+.links_margin {
+    margin: 4%;
+    text-align: center;
 }
 
 .titulo_cima {
@@ -285,22 +320,6 @@ button {
     .menu_itens {
         display: none;
     }
-
-    .menu_itens_responsivo {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        width: 925px;
-        background-color: #ff7b00;
-        z-index : 11;
-        height: 88px;
-        top: 78px;
-        left: 515px;
-        gap: 0px;
-        border-radius: 12px 12px 12px 12px;
-        margin-bottom: 0;
-        margin-top: 30px;
-    }
     
     .menu_itens_responsivo li a {
         text-decoration: none;
@@ -321,17 +340,30 @@ button {
     
     .menu_itens_responsivo {
         display: block;
-        position: absolute;
-        top: 5%;
-        left: 0;
-        right: 0; 
-        bottom: 0;
-        width: 100vw;
-        height: 300px;
-        margin-top: 0;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        height: 100%;
+        background-color: #000000de;
+        padding: 0;
+    }
+
+    .menu_itens_responsivo li a:hover {
+        border: 1px solid #ffffff;
         background-color: #ff7b00;
-        margin-left: 9%;
+        transform: translateY(1px); 
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1); 
+    }
+
+    .menu_itens_responsivo li {
+        position: relative;
         text-align: center;
+        margin: 10px 0;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 
     .icon {
@@ -345,15 +377,10 @@ button {
     }
 
     .fechar_menu {
-        color: #fff; 
-        text-align: center;
         display: flex;
-        justify-content: center;
-        margin-bottom: 3%;
-        padding-top: 1.5%;
-        padding-bottom: 1.5%;
-        text-decoration: none;
-        background-color: #2D3E4E;
+        justify-content: end;
+        margin-top: 5%;
+        margin-right: 5%;
     }
 }
 
@@ -361,6 +388,12 @@ button {
 @media only screen and (max-width: 1199px) {
     .container_rodape {
         display: block;
+        padding-bottom: 5% !important;
+        padding-top: 5% !important;
+    }
+
+    .contatenos {
+        margin-top: 1rem;
     }
     
     .siganos_imgs {
