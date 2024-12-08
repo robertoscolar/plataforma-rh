@@ -248,14 +248,12 @@ body {
     opacity: 0;  
 }
 
-/* Ícone dentro do botão */
 .whatsapp-icon {
     width: 80%;
     height: 80%;
     border-radius: 50%;
 }
 
-/* Texto oculto inicialmente */
 .whatsapp-hover-text {
     position: absolute;
     right: 70px; 

@@ -26,6 +26,7 @@
         <a href="https://api.whatsapp.com/send?phone=5511915189377&text=Olá!" 
    class="whatsapp-float" 
    target="_blank">
+   <span class="whatsapp-hover-text">Deseja um atendimento <BR> personalizado?<BR> Chame a gente no Whats!</span>
    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="whatsapp-icon">
 </a>
             <div class="introducao">
