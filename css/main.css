@@ -15,6 +15,24 @@
     }
 }
 
+@keyframes fadeInOpacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1; 
+    }
+}
+
+@keyframes fadeOutOpacity {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
  
 body {
     animation: slideUpFadeIn 0.7s ease-out; 
@@ -424,23 +442,7 @@ button {
       
 }
 
-@keyframes fadeInOpacity {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1; 
-    }
-}
 
-@keyframes fadeOutOpacity {
-    0% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
-}
 
 
 /* RODAPÉ RESPONSIVO */
@@ -465,13 +467,13 @@ button {
         width: 50px;
         height: 50px;
     }
-
 }
 
 @media only screen and (max-width: 768px) {
 
     .conteudo_principal {
         padding-top: 120px;
+        padding-bottom: 40%;
     }
 
     .whatsapp-float {
