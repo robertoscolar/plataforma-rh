@@ -468,6 +468,10 @@ button {
         padding-top: 120px;
     }
 
+    .whatsapp-float {
+        width: 30px;
+        height: 30px;
+    }
     
     .titulo {
         font-size: 200%;
