@@ -27,6 +27,11 @@
 
 
     <section class="conteudo_principal">
+    <a href="https://api.whatsapp.com/send?phone=5511915189377&text=Olá!" 
+   class="whatsapp-float" 
+   target="_blank">
+   <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="whatsapp-icon">
+</a>
         <div class="container_conteudo_erro">
             <h1 class="titulo">OPS! <BR>PÁGINA NÃO ENCONTRADA</h1>
             <p class="mensagem_erro">A página que você está procurando não foi encontrada. <BR>Mas não se preocupe, nós

@@ -30,6 +30,11 @@
     </header>
 
     <section class="conteudo_principal">
+    <a href="https://api.whatsapp.com/send?phone=5511915189377&text=Olá!" 
+   class="whatsapp-float" 
+   target="_blank">
+   <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="whatsapp-icon">
+</a>
         <h1>SEJA PARTE DE NOSSO TIME!</h1>
         <div class="form_explicativo">
             <div class="conteiner_explicativo">

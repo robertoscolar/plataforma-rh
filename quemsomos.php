@@ -23,6 +23,11 @@
     </header>
     <main>
         <section class="conteudo_principal">
+        <a href="https://api.whatsapp.com/send?phone=5511915189377&text=Olá!" 
+   class="whatsapp-float" 
+   target="_blank">
+   <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="whatsapp-icon">
+</a>
             <div class="introducao">
                 <div class="introducao_imagem"></div>
                 <h1 class="dez_anos_exp">

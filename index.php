@@ -25,17 +25,18 @@
     </header>
 
     <section class="conteudo_principal">
+    <a href="https://api.whatsapp.com/send?phone=5511915189377&text=Olá!" 
+   class="whatsapp-float" 
+   target="_blank">
+   <span class="whatsapp-hover-text">Deseja um atendimento <BR> personalizado?<BR> Chame a gente no Whats!</span>
+   <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="whatsapp-icon">
+</a>
         <div class="container_conteudo_principal">
             <h2 class="subtitulo">CONSTRUTECH</h2>
             <h1 class="titulo">SELECIONANDO OS SEUS COLABORADORES</h1>
             <button class="botao_1">
                 <a href="quemsomos.php">SAIBA MAIS</a>
             </button>
-    <a href="https://api.whatsapp.com/send?phone=SEU_NUMERO&text=Olá!" 
-   class="whatsapp-float" 
-   target="_blank">
-   <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="whatsapp-icon">
-</a>
         </div>
     </section>
     <footer class="rodape">
