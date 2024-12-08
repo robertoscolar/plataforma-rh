@@ -252,7 +252,7 @@ body {
     width: 80%;
     height: 80%;
     border-radius: 50%;
-    
+
 }
 
 .whatsapp-hover-text {
@@ -381,6 +381,7 @@ button {
         height: 100%;
         background-color: #000000de;
         padding: 0;
+        animation: fadeInOpacity 0.5s forwards;
     }
 
     .menu_itens_responsivo li a:hover {
@@ -414,8 +415,33 @@ button {
         justify-content: end;
         margin-top: 5%;
         margin-right: 5%;
+        /* animation: fadeInOpacity 0.5s forwards; */
+    }
+
+    .menu_itens_responsivo.fechar {
+        animation: fadeOutOpacity 0.5s forwards;
+      }
+      
+}
+
+@keyframes fadeInOpacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1; 
     }
 }
+
+@keyframes fadeOutOpacity {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
 
 /* RODAPÉ RESPONSIVO */
 @media only screen and (max-width: 1199px) {
