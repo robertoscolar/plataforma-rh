@@ -1,6 +1,6 @@
 # Construtech
 
-Projeto web realizado com o intuito de aplicação dos conhecimentos adquiridos na linguagem de programação **PHP**.
+Projeto web realizado com o intuito de aplicar os conhecimentos adquiridos na linguagem de programação **PHP**.
 
 <br>
 
