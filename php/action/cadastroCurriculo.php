@@ -104,9 +104,6 @@ if ($stmt->execute()) {
         $mail->AddReplyTo('senac@conectesites.com.br', 'Construtech Recrutamento');
         $mail->SetFrom('senac@conectesites.com.br', 'Construtech Recrutamento');
         $mail->addAddress("$email", "$nome");
-        $mail->addBcc('roberto.bscolar@senacsp.edu.br', 'Roberto Scolar');
-        $mail->addBcc('gabriel.asantos102@senacsp.edu.br', 'Gabriel Santos');
-        $mail->addBcc('rafael.caraujo11@senacsp.edu.br', 'Rafael Araujo'); 
         $mail->Subject = "=?UTF-8?B?".base64_encode("Cadastro de Currículo - $nome")."?=";
         $mail->AltBody = "Não foi possível visualizar a mensagem, por favor, tente novamente!";
         $mail->Body = $body;
